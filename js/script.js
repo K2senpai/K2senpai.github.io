@@ -89,34 +89,34 @@ categorie_container.forEach(function (element) {
     enfant.classList.toggle("expand");
   });
 });
-// video_canad_item.addEventListener("mousemove", () => {
-//   for (let i = 0; i < image_canad_item.length; i++) {
-//     image_canad_item[i].classList.add("shake");
-//   }
+ video_canad_item.addEventListener("mousemove", () => {
+   for (let i = 0; i < image_canad_item.length; i++) {
+     image_canad_item[i].classList.add("shake");
+   }
+ });
+ video_canad_item.addEventListener("mouseleave", (e) => {
+   for (let i = 0; i < image_canad_item.length; i++) {
+     image_canad_item[i].classList.remove("shake");
+   }
+ });
+// video_item.forEach(function (element) {
+//   const video = element.querySelector("video");
+//   element.addEventListener("mouseenter", () => {
+//     video.play();
+//     // const link_video_click = element.firstElementChild;
+//     // link_video_click.classList.add("show_link_video");
+//   });
+//   // element.addEventListener("mousemove", () => {
+//   //   const link_video_click = element.firstElementChild;
+//   //   link_video_click.style.left = `${x - 5}px`;
+//   //   link_video_click.style.top = `${y - 5}px`;
+//   // });
+//   element.addEventListener("mouseleave", () => {
+//     video.pause();
+//     // const link_video_click = element.firstElementChild;
+//     // link_video_click.classList.remove("show_link_video");
+//   });
 // });
-// video_canad_item.addEventListener("mouseleave", (e) => {
-//   for (let i = 0; i < image_canad_item.length; i++) {
-//     image_canad_item[i].classList.remove("shake");
-//   }
-// });
-video_item.forEach(function (element) {
-  const video = element.querySelector("video");
-  element.addEventListener("mouseenter", () => {
-    video.play();
-    // const link_video_click = element.firstElementChild;
-    // link_video_click.classList.add("show_link_video");
-  });
-  // element.addEventListener("mousemove", () => {
-  //   const link_video_click = element.firstElementChild;
-  //   link_video_click.style.left = `${x - 5}px`;
-  //   link_video_click.style.top = `${y - 5}px`;
-  // });
-  element.addEventListener("mouseleave", () => {
-    video.pause();
-    // const link_video_click = element.firstElementChild;
-    // link_video_click.classList.remove("show_link_video");
-  });
-});
 
 // menu.addEventListener("click", (e) => {
 //   e.preventDefault();
