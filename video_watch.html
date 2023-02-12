@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Video</title>
+</head>
+
+<body>
+    <div class="page_preload">
+        <div class="page_preload_text garde" id="my_text">
+            Vidéo
+        </div>
+        <div class="circle_big_bg">
+        </div>
+        <div class="circle_big_primary"></div>
+    </div>
+    <div class="modal_inscription">
+        <div class="form_login_container">
+            <div class="logo_canad_inscript_container">
+                <div class="logo_canad_inscript"><img src="img/canadink.png" alt="" srcset=""></div>
+            </div>
+            <form action="" method="post" class="form_inscription">
+                <input type="text" name="" id="" placeholder="Entrez votre nom d'utilisateur" required>
+                <input type="email" placeholder="Entrez votre adresse mail">
+                <input type="number" name="" id="" placeholder="Entrez votre numéro de télephone">
+                <div class="input_group">
+                    <input type="password" name="" id="" placeholder="Entrez votre mot de passe" required>
+                    <input type="password" name="" id="" placeholder="Confirmer le mot de passe" required>
+                </div>
+                <div class="term_use">
+                    <input type="checkbox" name="" id="term_use" required>
+                    <em class="bx bx-check bx-sm"></em>
+                    <label for="term_use">J'accepte les <a href="">Termes et conditions d'utilisation de
+                            canadink</a></label>
+                </div>
+                <p>ou s'inscrire avec</p>
+                <div class="social_inscription">
+                    <a href="" class="bx bxl-google bx-sm"></a>
+                    <a href="" class="bx bxl-facebook-circle bx-sm"></a>
+                </div>
+                <div class="inscrip_extra">
+                    <a href="" class="link_connexion">J'ai déjà un compte</a>
+                </div>
+                <button type="submit" class="btn_inscription">S'inscrire</button>
+            </form>
+            <form action="" method="post" class="form_connexion">
+                <input type="text" name="" id="" placeholder="Email ou numéro de télephone" required>
+                <input type="password" name="" id="" placeholder="Mot de passe" required>
+                <div class="inscrip_extra" style="margin-top: 10px; margin-bottom: 10px;">
+                    <a href="" class="link_inscription">Je n'ai pas encore de compte !</a>
+                    <a href="" class="forget_mdp">Mot de passe oublié ?</a>
+                </div>
+                <button type="submit" class="btn_connexion">Se connecter</button>
+            </form>
+        </div>
+    </div>
+    <nav class="navigation navigation_only">
+        <div class="navigation_item">
+            <span class="theme navigation_item_element" title="Cliquez pour modifier le thème d'affichage"><em
+                    class="bx bx-moon bx-sm"></em></span>
+            <span class="header_search navigation_item_element" title="Cliquez pour effectuer une recherche"><em
+                    class="bx bx-search-alt bx-sm"></em></span>
+            <span class="alert_notification navigation_item_element" title="Cliquez pour voir vos notifications"><em
+                    class="bx bx-bell bx-sm"></em></span>
+            <div class="info_author_post_video navigation_item_element">
+                <em class="bx bx-info-circle bx-sm"></em>
+                <section class="author_video_info">
+                    <div class="author_video"><img src="img/photo.jpg" alt="" srcset=""></div>
+                    <div class="author_video_action">
+                        <h2>Comment immigrer au Canada Comment Canada</h2>
+                        <h3><a href="">Steve Wilfried</a>
+                        </h3>
+                        <small style="font-size: 0.55rem; font-weight: 550;color: rgb(78, 77, 77);">2.5k | Posté le
+                            10/03/2022 à
+                            18h15</small>
+                        <button type="button">S'abonner <em class="bx bx-bell"></em></button>
+                    </div>
+                </section>
+            </div>
+            <div class="logo"><img src="img/canadink.png" alt="" srcset=""></div>
+            <button type="button" class="menu" id="menu"><em class="bx bx-menu-alt-right"></em></button>
+        </div>
+    </nav>
+    <section class="watch_video_container">
+        <section class="video_container_grid">
+            <section class="video"><img src="img/photo_2.jpg" alt="" srcset=""> <em class="bx bx-play-circle"></em></section>
+            <!-- <p class="watch_paragraphe">Scroller vers la gauche pour voir les commentaires <em
+                    class="bx bx-chevron-right"></em></p> -->
+        </section>
+        <section class="commentaire_video">
+            <section class="commentaire_text">
+                <form method="post" class="commentaire_text_title">
+                    <h3>157 commentaires</h3>
+                    <!-- <select name="" id="">
+                        <option value="">Trier par</option>
+                        <option value="">Les plus pertinents</option>
+                        <option value="">Les plus récents d'abord</option>
+                    </select> -->
+                </form>
+                <div class="commentaire_you_post">
+                    <form action="" method="post">
+                        <textarea name="" id="" placeholder="Ecrivez votre commentaire ici" required></textarea>
+                        <button type="submit">Ajouter votre commentaire</button>
+                    </form>
+                    <div class="commentaire_post_user">
+                        <div class="profil_post_user">
+                            <div class="user_image_post"><img src="img/photo.jpg" alt="" srcset=""></div>
+                            <div class="user_info_post">
+                                <h4>Steve Wilfried <small>posté le 10/02/2023 à 15h15</small></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus minima at
+                                    voluptas ex asperiores esse eos assumenda ullam commodi voluptate rerum voluptatem
+                                    error obcaecati pariatur, corporis neque ipsum laborum.</p>
+                                <button type="button">Répondre</button>
+                            </div>
+                        </div>
+                        <ul class="list_reponse_post">
+                            <div class="reponse_post">5 réponses <em class="bx bx-chevron-down"></em></div>
+                            <li>
+                                <div class="profil_post_user_reponse">
+                                    <div class="user_image_post_reponse"><img src="img/photo.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="user_info_post">
+                                        <h4>Steve Wilfried <small>posté le 10/02/2023 à 15h15</small></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus
+                                            minima at
+                                            voluptas ex asperiores esse eos assumenda ullam commodi voluptate rerum
+                                            voluptatem
+                                            error obcaecati pariatur, corporis neque ipsum laborum.</p>
+                                        <button type="button">Répondre</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profil_post_user_reponse">
+                                    <div class="user_image_post_reponse"><img src="img/photo.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="user_info_post">
+                                        <h4>Steve Wilfried <small>posté le 10/02/2023 à 15h15</small></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus
+                                            minima at
+                                            voluptas ex asperiores esse eos assumenda ullam commodi voluptate rerum
+                                            voluptatem
+                                            error obcaecati pariatur, corporis neque ipsum laborum.</p>
+                                        <button type="button">Répondre</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profil_post_user_reponse">
+                                    <div class="user_image_post_reponse"><img src="img/photo.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="user_info_post">
+                                        <h4>Steve Wilfried <small>posté le 10/02/2023 à 15h15</small></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus
+                                            minima at
+                                            voluptas ex asperiores esse eos assumenda ullam commodi voluptate rerum
+                                            voluptatem
+                                            error obcaecati pariatur, corporis neque ipsum laborum.</p>
+                                        <button type="button">Répondre</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="commentaire_post_user">
+                        <div class="profil_post_user">
+                            <div class="user_image_post"><img src="img/photo_2.jpg" alt="" srcset=""></div>
+                            <div class="user_info_post">
+                                <h4>Steve Wilfried <small>posté le 10/02/2023 à 15h15</small></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus minima at
+                                    voluptas ex asperiores esse eos assumenda ullam commodi voluptate rerum voluptatem
+                                    error obcaecati pariatur, corporis neque ipsum laborum.</p>
+                                <button type="button">Répondre</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commentaire_post_user">
+                        <div class="profil_post_user">
+                            <div class="user_image_post"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                            <div class="user_info_post">
+                                <h4>Steve Wilfried <small>posté le 10/02/2023 à 15h15</small></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus minima at
+                                    voluptas ex asperiores esse eos assumenda ullam commodi voluptate rerum voluptatem
+                                    error obcaecati pariatur, corporis neque ipsum laborum.</p>
+                                <button type="button">Répondre</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside class="video_similaire">
+                <div class="video_similaire_container">
+                    <a href="" class="video_similaire_item"><img src="img/photo_3.jpg" alt="" srcset=""><span
+                            class="time_video_similaire">12:28</span></a>
+                    <div class="video_similaire_item_info">
+                        <h4><a href="">Comment immigrer au Canada sans difficultés</a></h4>
+                        <div>
+                            <a href="" class="author_video_similaire">Herman Frietz</a>
+                            <small>Posté le 10/04/2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="video_similaire_container">
+                    <a href="" class="video_similaire_item"><img src="img/photo_2.jpg" alt="" srcset=""><span
+                            class="time_video_similaire">12:28</span></a>
+                    <div class="video_similaire_item_info">
+                        <h4><a href="">Comment immigrer au Canada sans difficultés</a></h4>
+                        <div>
+                            <a href="" class="author_video_similaire">Herman Frietz</a>
+                            <small>Posté le 10/04/2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="video_similaire_container">
+                    <a href="" class="video_similaire_item"><img src="img/photo_7.jpg" alt="" srcset=""><span
+                            class="time_video_similaire">12:28</span></a>
+                    <div class="video_similaire_item_info">
+                        <h4><a href="">Comment immigrer au Canada sans difficultés</a></h4>
+                        <div>
+                            <a href="" class="author_video_similaire">Herman Frietz</a>
+                            <small>Posté le 10/04/2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="video_similaire_container">
+                    <a href="" class="video_similaire_item"><img src="img/photo_6.jpg" alt="" srcset=""><span
+                            class="time_video_similaire">12:28</span></a>
+                    <div class="video_similaire_item_info">
+                        <h4><a href="">Comment immigrer au Canada sans difficultés</a></h4>
+                        <div>
+                            <a href="" class="author_video_similaire">Herman Frietz</a>
+                            <small>Posté le 10/04/2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="video_similaire_container">
+                    <a href="" class="video_similaire_item"><img src="img/photo_5.jpg" alt="" srcset=""><span
+                            class="time_video_similaire">12:28</span></a>
+                    <div class="video_similaire_item_info">
+                        <h4><a href="">Comment immigrer au Canada sans difficultés</a></h4>
+                        <div>
+                            <a href="" class="author_video_similaire">Herman Frietz</a>
+                            <small>Posté le 10/04/2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="video_similaire_container">
+                    <a href="" class="video_similaire_item"><img src="img/photo_4.jpg" alt="" srcset=""><span
+                            class="time_video_similaire">12:28</span></a>
+                    <div class="video_similaire_item_info">
+                        <h4><a href="">Comment immigrer au Canada sans difficultés</a></h4>
+                        <div>
+                            <a href="" class="author_video_similaire">Herman Frietz</a>
+                            <small>Posté le 10/04/2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="video_similaire_container">
+                    <a href="" class="video_similaire_item"><img src="img/photo_3.jpg" alt="" srcset=""><span
+                            class="time_video_similaire">12:28</span></a>
+                    <div class="video_similaire_item_info">
+                        <h4><a href="">Comment immigrer au Canada sans difficultés</a></h4>
+                        <div>
+                            <a href="" class="author_video_similaire">Herman Frietz</a>
+                            <small>Posté le 10/04/2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="video_similaire_container">
+                    <a href="" class="video_similaire_item"><img src="img/photo_2.jpg" alt="" srcset=""><span
+                            class="time_video_similaire">12:28</span></a>
+                    <div class="video_similaire_item_info">
+                        <h4><a href="">Comment immigrer au Canada sans difficultés</a></h4>
+                        <div>
+                            <a href="" class="author_video_similaire">Herman Frietz</a>
+                            <small>Posté le 10/04/2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="video_similaire_container">
+                    <a href="" class="video_similaire_item"><img src="img/photo_1.jpg" alt="" srcset=""><span
+                            class="time_video_similaire">12:28</span></a>
+                    <div class="video_similaire_item_info">
+                        <h4><a href="">Comment immigrer au Canada sans difficultés</a></h4>
+                        <div>
+                            <a href="" class="author_video_similaire">Herman Frietz</a>
+                            <small>Posté le 10/04/2023</small>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </section>
+    <!-- <footer class="footer footer_page" id="footer">
+        <div class="social_footer">
+            <div class="copyright">
+                <em class="bx bx-copyright"></em>
+                <span> Canadink Tous droits reservés</span>
+            </div>
+        </div>
+        <span class="design_by">Design by K2Senpaï</span>
+        </div>
+    </footer> -->
+    <div class="menu_container">
+        <div class="menu_image_container">
+            <div class="menu_image menu_image_visible"><img src="img/photo_2.jpg" alt="" srcset=""></div>
+            <div class="menu_image connexion_menu"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+            <div class="menu_image tutoriel_menu"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+            <div class="menu_image faq_menu"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+            <div class="menu_image propos_menu"><img src="img/photo_6.jpg" alt="" srcset=""></div>
+            <div class="menu_image contact_menu"><img src="img/photo_7.jpg" alt="" srcset=""></div>
+        </div>
+        <div class="menu_text">
+            <ul>
+                <li class="connexion_menu"><a href=""><span class="before_link">01</span>Inscription / Connexion</a>
+                </li>
+                <li class="tutoriel_menu"><a href=""><span class="before_link">02</span> Nos tutoriels</a></li>
+                <li class="faq_menu"><a href=""><span class="before_link">03</span> Faq</a></li>
+                <li class="propos_menu"><a href=""><span class="before_link">04</span> A propos de nous</a></li>
+                <li class="contact_menu"><a href=""><span class="before_link">05</span> Contactez-nous</a></li>
+            </ul>
+            <!-- <form action="" method="post" class="form_search">
+                <input type="search" name="" id="" class="search_general">
+                <em class="bx bx-search bx-lg"></em>
+            </form> -->
+        </div>
+        <button type="button" class="menu close" id="close"><em class="bx bx-x bx-sm"></em></button>
+    </div>
+    <div id="cursor"></div>
+    <script src="js/splitmin.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        const my_text = new SplitType("#my_text")
+        const element = document.querySelectorAll(".page_preload_text div")
+        const tab_li = Array.from(element_menu)
+        const tab = Array.from(element)
+        const tl = gsap.timeline()
+        tl.to(".circle_big_primary", {
+            scale: 100,
+            duration: 1
+        }).from(".char", {
+            y: 100,
+            opacity: 0,
+            delay: 0.5,
+            duration: 1,
+            stagger: {
+                each: 0.1,
+                from: "edges"
+            },
+            ease: "back.out(2)"
+        }).from(".circle_big_bg", {
+            visibility: "hidden",
+            delay: 0.5,
+            duration: 0.1
+        })
+            .to(".circle_big_bg", {
+                scale: 100,
+                duration: 1
+            })
+            .to(".page_preload", {
+                opacity: 0,
+                zIndex: -1
+            })
+        const info_author_post_video = document.querySelector(".info_author_post_video em")
+        const author_video_info = document.querySelector(".author_video_info")
+        info_author_post_video.addEventListener("click", () => {
+            author_video_info.classList.toggle("show_info")
+        })
+        const textarea = document.querySelector(".commentaire_you_post form textarea")
+        textarea.addEventListener("input", (e) => {
+            textarea.style.height = "auto"
+            let scHeight = e.target.scrollHeight
+            textarea.style.height = `${scHeight}px`
+        })
+        const reponse_post = document.querySelector(".reponse_post")
+        const chevron = document.querySelector(".reponse_post em")
+        let list_reponse_post_item = document.querySelectorAll(".list_reponse_post li")
+        reponse_post.addEventListener("click", () => {
+            for (let i = 0; i < list_reponse_post_item.length; i++) {
+                list_reponse_post_item[i].classList.toggle("show_list_post")
+                chevron.classList.toggle("bx-chevron-down")
+                chevron.classList.toggle("bx-chevron-up")
+            }
+        })
+        const form_connexion = document.querySelector(".form_connexion")
+        const form_inscription = document.querySelector(".form_inscription")
+        const link_connexion = document.querySelector(".link_connexion")
+        const link_inscription = document.querySelector(".link_inscription")
+        const form_login_container = document.querySelector(".form_login_container")
+        const modal_inscription = document.querySelector(".modal_inscription")
+        link_inscription.addEventListener("click", (e) => {
+            e.preventDefault()
+            form_login_container.classList.add("change_taille")
+            form_connexion.classList.add("hide_connexion")
+            form_inscription.classList.add("show_inscription")
+        })
+        link_connexion.addEventListener("click", (e) => {
+            e.preventDefault()
+            form_login_container.classList.remove("change_taille")
+            form_inscription.classList.remove("show_inscription")
+            form_connexion.classList.remove("hide_connexion")
+        })
+
+        const connexion_menu = document.querySelector(".connexion_menu a")
+
+        connexion_menu.addEventListener("click", (e) => {
+            e.preventDefault()
+            modal_inscription.classList.add("show_modal_inscription")
+            form_login_container.classList.add("show_login")
+        })
+        form_login_container.addEventListener("click", (e) => {
+            e.stopPropagation()
+        })
+        modal_inscription.addEventListener("click", (e) => {
+            form_login_container.classList.remove("show_login")
+            modal_inscription.classList.remove("show_modal_inscription")
+        }, {
+            capture: false
+        })
+    </script>
+</body>
+
+</html>
