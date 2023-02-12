@@ -1,11 +1,12 @@
-
 let cursor = document.querySelector("#cursor");
 let video_item = document.querySelectorAll(".video_item");
 const header_image_canad = document.querySelector(".header_image_canad");
 const video_canad_item = document.querySelector(".video_canad_item");
 const image_canad_item = document.querySelectorAll(".image_canad_item");
 const categorie_container = document.querySelectorAll(".categorie_container");
-const faq_container_item_title = document.querySelectorAll(".faq_container_item_title");
+const faq_container_item_title = document.querySelectorAll(
+  ".faq_container_item_title"
+);
 
 let x, y;
 document.addEventListener("mousemove", (e) => {
@@ -50,19 +51,19 @@ categorie_container.forEach(function (element) {
 //   const video = element.querySelector("video");
 //   element.addEventListener("mouseenter", () => {
 //     video.play();
-    // const link_video_click = element.firstElementChild;
-    // link_video_click.classList.add("show_link_video");
-  // });
-  // element.addEventListener("mousemove", () => {
-  //   const link_video_click = element.firstElementChild;
-  //   link_video_click.style.left = `${x - 5}px`;
-  //   link_video_click.style.top = `${y - 5}px`;
-  // });
-  // element.addEventListener("mouseleave", () => {
-  //   video.pause();
-    // const link_video_click = element.firstElementChild;
-    // link_video_click.classList.remove("show_link_video");
-  // });
+// const link_video_click = element.firstElementChild;
+// link_video_click.classList.add("show_link_video");
+// });
+// element.addEventListener("mousemove", () => {
+//   const link_video_click = element.firstElementChild;
+//   link_video_click.style.left = `${x - 5}px`;
+//   link_video_click.style.top = `${y - 5}px`;
+// });
+// element.addEventListener("mouseleave", () => {
+//   video.pause();
+// const link_video_click = element.firstElementChild;
+// link_video_click.classList.remove("show_link_video");
+// });
 // });
 
 // menu.addEventListener("click", (e) => {
