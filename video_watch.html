@@ -60,54 +60,68 @@
             </form>
         </div>
     </div>
+    <div class="modal_info_author_post_video_container">
+        <div class="modal_info_author_post_video">
+            <div class="modal_info_author_post_video_image">
+                <div class="author_video"><img src="img/photo.jpg" alt="" srcset=""></div>
+                <h3><a href="">Steve Wilfried | 2.5k</a>
+            </div>
+            </h3>
+            <button type="button">S'abonner <em class="bx bx-bell"></em></button>
+            <small style="font-size: 0.55rem; font-weight: 550;color: rgb(78, 77, 77);">Posté le
+                10/03/2022 à
+                18h15</small>
+            <h2>Comment immigrer au Canada Comment Canada</h2>
+        </div>
+    </div>
     <nav class="navigation navigation_only">
         <div class="navigation_item">
-            <span class="theme navigation_item_element" title="Cliquez pour modifier le thème d'affichage"><em
-                    class="bx bx-moon bx-sm"></em></span>
-            <span class="header_search navigation_item_element" title="Cliquez pour effectuer une recherche"><em
-                    class="bx bx-search-alt bx-sm"></em></span>
-            <span class="alert_notification navigation_item_element" title="Cliquez pour voir vos notifications"><em
-                    class="bx bx-bell bx-sm"></em></span>
-            <div class="info_author_post_video navigation_item_element">
-                <em class="bx bx-info-circle bx-sm"></em>
-                <section class="author_video_info">
-                    <div class="author_video"><img src="img/photo.jpg" alt="" srcset=""></div>
-                    <div class="author_video_action">
-                        <h2>Comment immigrer au Canada Comment Canada</h2>
-                        <h3><a href="">Steve Wilfried</a>
-                        </h3>
-                        <small style="font-size: 0.55rem; font-weight: 550;color: rgb(78, 77, 77);">2.5k | Posté le
-                            10/03/2022 à
-                            18h15</small>
-                        <button type="button">S'abonner <em class="bx bx-bell"></em></button>
-                    </div>
-                </section>
+            <div class="navigation_element">
+                <div class="navigation_item_element compte_client_actif"><img src="img/photo.jpg" alt="" srcset=""></div>
+                <span class="theme element_menu_float navigation_item_element" title="Cliquez pour modifier le thème d'affichage"><em
+                        class="bx bx-moon bx-sm"></em></span>
+                <span class="header_search element_menu_float navigation_item_element" title="Cliquez pour effectuer une recherche"><em
+                        class="bx bx-search-alt bx-sm"></em></span>
+                <span class="alert_notification element_menu_float navigation_item_element" title="Cliquez pour voir vos notifications"><em
+                        class="bx bx-bell bx-sm"></em></span>
+                <span class="commentaire_icon element_menu_float navigation_item_element" title="Cliquez pour voir les commentaires"><em
+                        class="bx bx-message bx-sm"></em></span>
+                <div class="info_author_post_video element_menu_float navigation_item_element">
+                    <em class="bx bx-info-circle bx-sm"></em>
+                    <section class="author_video_info">
+                        <div class="author_video"><img src="img/photo.jpg" alt="" srcset=""></div>
+                        <div class="author_video_action">
+                            <h2>Comment immigrer au Canada Comment Canada</h2>
+                            <h3><a href="">Steve Wilfried</a>
+                            </h3>
+                            <small style="font-size: 0.55rem; font-weight: 550;color: rgb(78, 77, 77);">2.5k | Posté le
+                                10/03/2022 à
+                                18h15</small>
+                            <button type="button">S'abonner <em class="bx bx-bell"></em></button>
+                        </div>
+                    </section>
+                </div>
+                <span class="navigation_item_element" title="Cliquez pour voir plus"><em
+                    class="bx bx-plus button_plus_look"></em><em class="bx bx-minus button_minus_look hide_button"></em></span>
             </div>
             <div class="logo"><img src="img/canadink.png" alt="" srcset=""></div>
             <button type="button" class="menu" id="menu"><em class="bx bx-menu-alt-right"></em></button>
         </div>
     </nav>
     <section class="watch_video_container">
-        <section class="video_container_grid">
-            <section class="video"><img src="img/photo_2.jpg" alt="" srcset=""> <em class="bx bx-play-circle"></em></section>
-            <!-- <p class="watch_paragraphe">Scroller vers la gauche pour voir les commentaires <em
-                    class="bx bx-chevron-right"></em></p> -->
-        </section>
-        <section class="commentaire_video">
-            <section class="commentaire_text">
-                <form method="post" class="commentaire_text_title">
-                    <h3>157 commentaires</h3>
-                    <!-- <select name="" id="">
-                        <option value="">Trier par</option>
-                        <option value="">Les plus pertinents</option>
-                        <option value="">Les plus récents d'abord</option>
-                    </select> -->
-                </form>
-                <div class="commentaire_you_post">
-                    <form action="" method="post">
+        <section class="commentaire_text">
+            <div class="block_commentaire">
+                <div class="form_commentainer_block">
+                    <form method="post" class="commentaire_text_title">
+                        <button type="button" class="retour"><em class="bx bx-arrow-back"></em> &nbsp;Retour</button>
+                        <h3>157 commentaires</h3>
+                    </form>
+                    <form action="" method="post" class="form_commentaire">
                         <textarea name="" id="" placeholder="Ecrivez votre commentaire ici" required></textarea>
                         <button type="submit">Ajouter votre commentaire</button>
                     </form>
+                </div>
+                <div class="commentaire_you_post">
                     <div class="commentaire_post_user">
                         <div class="profil_post_user">
                             <div class="user_image_post"><img src="img/photo.jpg" alt="" srcset=""></div>
@@ -193,7 +207,74 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="video_container_grid">
+            <section class="video"><img src="img/photo_2.jpg" alt="" srcset=""> <em class="bx bx-play-circle"></em>
             </section>
+            <!-- <p class="watch_paragraphe">Scroller vers la gauche pour voir les commentaires <em
+                    class="bx bx-chevron-right"></em></p> -->
+        </section>
+        <aside class="video_alternative">
+            <div class="video_alternative_container">
+                <a href="" class="video_alternative_item"><img src="img/photo_5.jpg" alt="" srcset=""></a>
+                <div class="video_alternative_info">
+                    <small>Posté le 10/03/2022</small>
+                    <h3>Comment immigrer au Canada en toute sécurité</h3>
+                </div>
+                <span class="time_video_similaire">12:28</span>
+            </div>
+            <div class="video_alternative_container">
+                <div class="video_alternative_item"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                <div class="video_alternative_info">
+                    <small>Posté le 10/03/2022</small>
+                    <h3>Comment immigrer au Canada en toute sécurité</h3>
+                </div>
+            </div>
+            <div class="video_alternative_container">
+                <div class="video_alternative_item"><img src="img/photo_2.jpg" alt="" srcset=""></div>
+                <div class="video_alternative_info">
+                    <small>Posté le 10/03/2022</small>
+                    <h3>Comment immigrer au Canada en toute sécurité</h3>
+                </div>
+            </div>
+            <div class="video_alternative_container">
+                <div class="video_alternative_item"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+                <div class="video_alternative_info">
+                    <small>Posté le 10/03/2022</small>
+                    <h3>Comment immigrer au Canada en toute sécurité</h3>
+                </div>
+            </div>
+            <div class="video_alternative_container">
+                <div class="video_alternative_item"><img src="img/photo_6.jpg" alt="" srcset=""></div>
+                <div class="video_alternative_info">
+                    <small>Posté le 10/03/2022</small>
+                    <h3>Comment immigrer au Canada en toute sécurité</h3>
+                </div>
+            </div>
+            <div class="video_alternative_container">
+                <div class="video_alternative_item"><img src="img/photo_7.jpg" alt="" srcset=""></div>
+                <div class="video_alternative_info">
+                    <small>Posté le 10/03/2022</small>
+                    <h3>Comment immigrer au Canada en toute sécurité</h3>
+                </div>
+            </div>
+            <div class="video_alternative_container">
+                <div class="video_alternative_item"><img src="img/photo_1.jpg" alt="" srcset=""></div>
+                <div class="video_alternative_info">
+                    <small>Posté le 10/03/2022</small>
+                    <h3>Comment immigrer au Canada en toute sécurité</h3>
+                </div>
+            </div>
+            <div class="video_alternative_container">
+                <div class="video_alternative_item"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+                <div class="video_alternative_info">
+                    <small>Posté le 10/03/2022</small>
+                    <h3>Comment immigrer au Canada en toute sécurité</h3>
+                </div>
+            </div>
+        </aside>
+        <!-- <section class="commentaire_video">
             <aside class="video_similaire">
                 <div class="video_similaire_container">
                     <a href="" class="video_similaire_item"><img src="img/photo_3.jpg" alt="" srcset=""><span
@@ -295,7 +376,7 @@
                     </div>
                 </div>
             </aside>
-        </section>
+        </section> -->
     </section>
     <!-- <footer class="footer footer_page" id="footer">
         <div class="social_footer">
@@ -333,6 +414,7 @@
         <button type="button" class="menu close" id="close"><em class="bx bx-x bx-sm"></em></button>
     </div>
     <div id="cursor"></div>
+    <script src="js/jquery.js"></script>
     <script src="js/splitmin.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
@@ -370,10 +452,30 @@
             })
         const info_author_post_video = document.querySelector(".info_author_post_video em")
         const author_video_info = document.querySelector(".author_video_info")
-        info_author_post_video.addEventListener("click", () => {
-            author_video_info.classList.toggle("show_info")
-        })
-        const textarea = document.querySelector(".commentaire_you_post form textarea")
+        if (window.matchMedia('(min-width:913px)')) {
+            info_author_post_video.addEventListener("click", () => {
+                author_video_info.classList.toggle("show_info")
+            })
+        }
+        if (window.matchMedia('(max-width:912px)')) {
+            const modal_info_author_post_video_container = document.querySelector(".modal_info_author_post_video_container")
+            const modal_info_author_post_video = document.querySelector(".modal_info_author_post_video")
+            info_author_post_video.addEventListener("click", () => {
+                modal_info_author_post_video_container.classList.add("show_info")
+                body.classList.add("change_height");
+
+            })
+            modal_info_author_post_video.addEventListener("click",(e)=>{
+                e.stopPropagation()
+            })
+            modal_info_author_post_video_container.addEventListener("click", (e) => {
+                body.classList.remove("change_height");
+                modal_info_author_post_video_container.classList.remove("show_info")
+            }, {
+                capture: false
+            })
+        }
+        const textarea = document.querySelector(".form_commentaire textarea")
         textarea.addEventListener("input", (e) => {
             textarea.style.height = "auto"
             let scHeight = e.target.scrollHeight
@@ -423,6 +525,39 @@
             modal_inscription.classList.remove("show_modal_inscription")
         }, {
             capture: false
+        })
+        const commentaire_icon = document.querySelector(".commentaire_icon")
+        const commentaire_text = document.querySelector(".commentaire_text")
+        const video_container_grid = document.querySelector(".video_container_grid")
+        const retour = document.querySelector(".retour")
+
+        commentaire_icon.addEventListener("click", () => {
+            video_container_grid.classList.add("hide_container_video")
+            commentaire_text.classList.add("show_commentaire")
+        })
+        retour.addEventListener("click", (e) => {
+            e.preventDefault()
+            commentaire_text.classList.remove("show_commentaire")
+            video_container_grid.classList.remove("hide_container_video")
+        })
+        const element_menu_float = document.querySelectorAll(".element_menu_float")
+        const button_plus_look = document.querySelector(".button_plus_look")
+        const button_minus_look = document.querySelector(".button_minus_look")
+        button_plus_look.addEventListener("click",()=>{
+            button_plus_look.classList.add("hide_button")
+            button_minus_look.classList.remove("hide_button")
+            for(let i=0;i<element_menu_float.length; i++)
+            {
+                element_menu_float[i].classList.add("show_navigation")
+            }
+        })
+        button_minus_look.addEventListener("click",()=>{
+            button_minus_look.classList.add("hide_button")
+            button_plus_look.classList.remove("hide_button")
+            for(let i=0;i<element_menu_float.length; i++)
+            {
+                element_menu_float[i].classList.remove("show_navigation")
+            }
         })
     </script>
 </body>

@@ -15,22 +15,29 @@
 
 <body>
     <div class="page_preload">
-        <div class="page_preload_text garde" id="my_text">
-            Steve Wilfried
-        </div>
+        <div class="page_preload_text garde" id="my_text">Steve Wilfried</div>
         <div class="circle_big_bg">
         </div>
         <div class="circle_big_primary"></div>
     </div>
     <header class="header header_profil" id="header">
-        <nav class="navigation">
+        <nav class="navigation navigation_only">
             <div class="navigation_item">
-                <span class="theme" title="Cliquez pour modifier le thème d'affichage"><em
-                        class="bx bx-moon bx-sm"></em></span>
-                <span class="header_search" title="Cliquez pour effectuer une recherche"><em
-                        class="bx bx-search-alt bx-sm"></em></span>
-                <span class="alert_notification" title="Cliquez pour voir vos notifications"><em
-                        class="bx bx-bell bx-sm"></em></span>
+                <div class="navigation_element">
+                    <a href="" class="navigation_item_element compte_client_actif"><img src="img/photo.jpg" alt=""
+                            srcset=""></a>
+                    <span class="theme element_menu_float navigation_item_element"
+                        title="Cliquez pour modifier le thème d'affichage"><em class="bx bx-moon bx-sm"></em></span>
+                    <span class="header_search element_menu_float navigation_item_element"
+                        title="Cliquez pour effectuer une recherche"><em class="bx bx-search-alt bx-sm"></em></span>
+                    <span class="alert_notification element_menu_float navigation_item_element"
+                        title="Cliquez pour voir vos notifications"><em class="bx bx-bell bx-sm"></em></span>
+                    <span class="deconnexion element_menu_float navigation_item_element"
+                        title="Cliquez ici pour vous déconnecter"><em class="bx bx-log-out bx-sm"></em></span>
+                    <span class="navigation_item_element" title="Cliquez pour voir plus"><em
+                            class="bx bx-chevron-down button_plus_look"></em><em
+                            class="bx bx-chevron-up button_minus_look hide_button"></em></span>
+                </div>
                 <div class="logo"><img src="img/canadink.png" alt="" srcset=""></div>
                 <button type="button" class="menu" id="menu"><em class="bx bx-menu-alt-right"></em></button>
             </div>
@@ -187,12 +194,21 @@
                 <em class="bx bx-search"></em>
             </form>
             <div class="favoris_filter">
-                <button type="button" class="button_tutoriel_list"><em class="bx bxs-video"></em> Turoriels crées <em
+                <button type="button" class="button_tutoriel_list"><em class="bx bxs-video"></em> Tutoriels crées <em
                         title="Cliquez pour créer une video" class="create_tuto bx bx-plus"></em></button>
-                <button type="button" class="button_favoris_list active_button_favoris"><em class="bx bxs-pin"></em>
-                    Videos épinglées</button>
+                <button type="button" class="button_favoris_list active_button_favoris"><em
+                        class="bx bxs-pin"></em>Videos épinglées</button>
                 <button type="button" class="button_evenement_list"><em class="bx bxs-calendar"></em> Evènements crées
                     <em title="Cliquez pour créer un évènement" class="create_tuto bx bx-plus"></em></button>
+                <button type="button" class="button_abonnement_list button_list_sup"><em class="bx bxs-group"></em>
+                    Abonnements</button>
+                <button type="button" class="button_notification_list button_list_sup"><em class="bx bxs-bell"></em>
+                    Notifications</button>
+                <button type="button" class="button_evenement_cour_list button_list_sup"><em
+                        class="bx bxs-calendar-event"></em>
+                    Evènements</button>
+                <button type="button" class="button_propos_list button_list_sup"><em class="bx bxs-info-circle"></em> À
+                    propos</button>
             </div>
             <div class="favoris_grid grid_item_list active_grid_item">
                 <div class="video_favoris_container">
@@ -344,6 +360,189 @@
                     <a href="" class="link_video_favoris"><em class="bx bx-play"></em></a>
                 </div>
             </div>
+            <div class="abonnement_grid responsive_element_grid">
+                <section class="abonnement">
+                    <h3 class="abonnement_title"><em class="bx bx-group" title="Abonnements"></em> Abonnements
+                        <span>11</span>
+                    </h3>
+                    <div class="separator_profil"></div>
+                    <div class="abonnement_contain">
+                        <a href="" class="abonnement_item">
+                            <div class="image_abonnement"><img src="img/photo.jpg" alt="" srcset=""></div>
+                            <h4 class="abonnement_name">Christian josh baus<p>2.5k abonnés</p>
+                            </h4>
+                            <div class="post_new_indication_none"></div>
+                        </a>
+                        <a href="" class="abonnement_item">
+                            <div class="image_abonnement"><img src="img/photo_2.jpg" alt="" srcset=""></div>
+                            <h4 class="abonnement_name">Christian josh baus <p>2.5k abonnés</p>
+                            </h4>
+                            <div class="post_new_indication"></div>
+                        </a>
+                        <a href="" class="abonnement_item">
+                            <div class="image_abonnement"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                            <h4 class="abonnement_name">Christian josh baus<p>2.5k abonnés</p>
+                            </h4>
+                            <div class="post_new_indication_none"></div>
+                        </a>
+                        <a href="" class="abonnement_item">
+                            <div class="image_abonnement"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                            <h4 class="abonnement_name">Christian josh baus<p>2.5k abonnés</p>
+                            </h4>
+                            <div class="post_new_indication"></div>
+                        </a>
+                        <a href="" class="abonnement_item">
+                            <div class="image_abonnement"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+                            <h4 class="abonnement_name">Christian josh baus<p>2.5k abonnés</p>
+                            </h4>
+                            <div class="post_new_indication"></div>
+                        </a>
+                        <a href="" class="abonnement_item">
+                            <div class="image_abonnement"><img src="img/photo_6.jpg" alt="" srcset=""></div>
+                            <h4 class="abonnement_name">Christian josh baus<p>2.5k abonnés</p>
+                            </h4>
+                            <div class="post_new_indication_none"></div>
+                        </a>
+                        <a href="" class="abonnement_item">
+                            <div class="image_abonnement"><img src="img/photo_7.jpg" alt="" srcset=""></div>
+                            <h4 class="abonnement_name">Christian josh baus<p>2.5k abonnés</p>
+                            </h4>
+                            <div class="post_new_indication"></div>
+                        </a>
+                        <a href="" class="abonnement_item">
+                            <div class="image_abonnement"><img src="img/photo.jpg" alt="" srcset=""></div>
+                            <h4 class="abonnement_name">Christian josh baus<p>2.5k abonnés</p>
+                            </h4>
+                            <div class="post_new_indication_none"></div>
+                        </a>
+                        <a href="" class="abonnement_item">
+                            <div class="image_abonnement"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+                            <h4 class="abonnement_name">Christian josh baus<p>2.5k abonnés</p>
+                            </h4>
+                            <div class="post_new_indication"></div>
+                        </a>
+                        <a href="" class="abonnement_item">
+                            <div class="image_abonnement"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                            <h4 class="abonnement_name">Christian josh baus<p>2.5k abonnés</p>
+                            </h4>
+                            <div class="post_new_indication_none"></div>
+                        </a>
+                        <a href="" class="abonnement_item">
+                            <div class="image_abonnement"><img src="img/photo_6.jpg" alt="" srcset=""></div>
+                            <h4 class="abonnement_name">Christian josh baus<p>2.5k abonnés</p>
+                            </h4>
+                            <div class="post_new_indication"></div>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div class="notification_grid responsive_element_grid">
+                <section class="notification">
+                    <h3 class="abonnement_title"><em class="bx bx-bell"></em> Notifications <span>5</span></h3>
+                    <div class="separator_profil"></div>
+                    <div class="notification_contain">
+                        <div class="notification_item">
+                            <div class="notification_info">
+                                <div class="image_abonnement"><img src="img/photo.jpg" alt="" srcset=""></div>
+                                <h4 class="abonnement_name">Christian josh baus<p>2.5k abonnés</p>
+                                </h4>
+                                <div class="post_time_indication">07:27</div>
+                            </div>
+                            <div class="notification_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis
+                                ex vel sint corporis. Aliquid in pariatur, unde alias cupiditate rerum excepturi
+                                voluptatem
+                                fuga reiciendis autem suscipit ut, explicabo mollitia neque? <a href=""
+                                    class="most_look_notif">En savoir plus</a></div>
+                        </div>
+                        <div class="notification_item">
+                            <div class="notification_info">
+                                <div class="image_abonnement"><img src="img/photo_2.jpg" alt="" srcset=""></div>
+                                <h4 class="abonnement_name">Christian josh baus<p>2.5k abonnés</p>
+                                </h4>
+                                <div class="post_time_indication">07:27</div>
+                            </div>
+                            <div class="notification_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis
+                                ex vel sint corporis. Aliquid in pariatur, unde alias cupiditate rerum excepturi
+                                voluptatem
+                                fuga reiciendis autem suscipit ut, explicabo mollitia neque? <a href=""
+                                    class="most_look_notif">En savoir plus</a></div>
+                        </div>
+                        <div class="notification_item">
+                            <div class="notification_info">
+                                <div class="image_abonnement"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                                <h4 class="abonnement_name">Christian josh baus<p>2.5k abonnés</p>
+                                </h4>
+                                <div class="post_time_indication">07:27</div>
+                            </div>
+                            <div class="notification_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis
+                                ex vel sint corporis. Aliquid in pariatur, unde alias cupiditate rerum excepturi
+                                voluptatem
+                                fuga reiciendis autem suscipit ut, explicabo mollitia neque? <a href=""
+                                    class="most_look_notif">En savoir plus</a></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="evenement_list_grid responsive_element_grid">
+                <section class="evenement">
+                    <article class="evenement_item">
+                        <div class="image_evenement_author"><img src="img/photo.jpg" alt="" srcset=""></div>
+                        <img src="img/photo_2.jpg" alt="" srcset="">
+                        <h2 class="evenement_title">Comment faire ses etudes au Canada en 2023</h2>
+                        <small class="evenement_date">10/02/2023 à 16h UTC</small>
+                        <a href="" class="link_evenement">Rejoindre</a>
+                        <div class="banniere_evenement"></div>
+                    </article>
+                    <article class="evenement_item">
+                        <div class="image_evenement_author"><img src="img/photo.jpg" alt="" srcset=""></div>
+                        <img src="img/photo_3.jpg" alt="" srcset="">
+                        <h2 class="evenement_title">Comment faire ses etudes au Canada en 2023</h2>
+                        <small class="evenement_date">10/02/2023 à 16h UTC</small>
+                        <a href="" class="link_evenement">Rejoindre</a>
+                        <div class="banniere_evenement"></div>
+                    </article>
+                    <article class="evenement_item">
+                        <div class="image_evenement_author"><img src="img/photo.jpg" alt="" srcset=""></div>
+                        <img src="img/photo_4.jpg" alt="" srcset="">
+                        <h2 class="evenement_title">Comment faire ses etudes au Canada en 2023</h2>
+                        <small class="evenement_date">10/02/2023 à 16h UTC</small>
+                        <a href="" class="link_evenement">Rejoindre</a>
+                        <div class="banniere_evenement"></div>
+                    </article>
+                </section>
+            </div>
+            <div class="information_compte_grid responsive_element_grid">
+                <section class="biblio">
+                    <h3 class="abonnement_title"><em class="bx bx-info-circle" title="Abonnements"></em> À propos <em
+                            title="Cliquez pour mettre à jour votre profil" class="bx bx-edit-alt"
+                            style="position: absolute; right: 0; top: 50%; transform: translateY(-50%);"></em></h3>
+                    <div class="separator_profil"></div>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laudantium
+                        nulla
+                        id obcaecati numquam culpa aliquid ipsum sed sit dolorum, doloremque voluptatum laboriosam
+                        facilis
+                        officiis ullam quisquam rem, deserunt eius?</p>
+                    <div class="avis">
+                        <section class="avis_abonne_list">
+                            <h4>4/5</h4>
+                            <small>Score</small>
+                        </section>
+                        <div class="separate"></div>
+                        <section class="avis_abonne_list">
+                            <h4>16.2k</h4>
+                            <small>Abonnés</small>
+                        </section>
+                        <div class="separate"></div>
+                        <section class="avis_abonne_list">
+                            <h4>72.4k</h4>
+                            <small>J'aime</small>
+                        </section>
+                    </div>
+                </section>
+            </div>
         </section>
         <aside class="evenement_biblio">
             <section class="evenement">
@@ -399,28 +598,6 @@
             </section>
         </aside>
     </section>
-    <footer class="footer footer_page" id="footer">
-        <!-- <form action="" method="post" class="form_newsletter">
-            <h3 class="newsletter">Inscrivez - vous à notre Newsletter pour ne rien râter des actualités sur
-                l'immigration au canada</h3>
-            <input type="email" name="" id="" class="newsletter_input" placeholder="Votre adresse mail">
-            <button type="submit" class="newsletter_button">S'inscrire</button>
-        </form> -->
-        <div class="social_footer">
-            <div class="copyright">
-                <em class="bx bx-copyright"></em>
-                <span> Canadink Tous droits reservés
-                    <div class="social_footer_link">
-                        <a href="" class="bx bxl-facebook"></a>
-                        <a href="" class="bx bxl-twitter"></a>
-                        <a href="" class="bx bxl-whatsapp"></a>
-                        | <em class="bx bx-map"></em>Canada, Ottawa
-                </span>
-            </div>
-        </div>
-        <span class="design_by">Design by K2Senpaï</span>
-        </div>
-    </footer>
     <div class="menu_container">
         <div class="menu_image_container">
             <div class="menu_image menu_image_visible"><img src="img/photo_2.jpg" alt="" srcset=""></div>
@@ -432,7 +609,7 @@
         </div>
         <div class="menu_text">
             <ul>
-                <li class="connexion_menu"><a href="https://k2senpai.github.io/client.html"><span class="before_link">01</span>Mon Compte</a>
+                <li class="connexion_menu"><a href="client.html"><span class="before_link">01</span>Mon Compte</a>
                 </li>
                 <li class="tutoriel_menu"><a href=""><span class="before_link">02</span> Nos tutoriels</a></li>
                 <li class="faq_menu"><a href=""><span class="before_link">03</span> Faq</a></li>
@@ -462,7 +639,7 @@
             scale: 100,
             duration: 1
         })
-        .from(".char", {
+            .from(".char", {
                 y: 100,
                 opacity: 0,
                 delay: 0.5,
@@ -486,30 +663,30 @@
                 opacity: 0,
                 zIndex: -1
             })
-            // .from(".header", {
-            //     scale: 2,
-            //     duration: 0.7
-            // }, "-=1.3")
-            // .from(".navigation", {
-            //     scale: 0,
-            //     opacity: 0
-            // })
-            // .from(".profil_image", {
-            //     scale: 0,
-            //     duration: 1
-            // }, "-=1.1")
-            // .from(".profil_name, .action_profile, .profil_contain", {
-            //     opacity: 0,
-            //     y: -20,
-            //     stagger: 0.2
-            // }, "-=1.1")
-            // .from(".header_search, .alert_notification", {
-            //     scale: 0,
-            //     stagger: 0.3
-            // })
-            // .to(".page_preload", {
-            //     display: "none"
-            // })
+        // .from(".header", {
+        //     scale: 2,
+        //     duration: 0.7
+        // }, "-=1.3")
+        // .from(".navigation", {
+        //     scale: 0,
+        //     opacity: 0
+        // })
+        // .from(".profil_image", {
+        //     scale: 0,
+        //     duration: 1
+        // }, "-=1.1")
+        // .from(".profil_name, .action_profile, .profil_contain", {
+        //     opacity: 0,
+        //     y: -20,
+        //     stagger: 0.2
+        // }, "-=1.1")
+        // .from(".header_search, .alert_notification", {
+        //     scale: 0,
+        //     stagger: 0.3
+        // })
+        // .to(".page_preload", {
+        //     display: "none"
+        // })
 
         $(".evenement").slick({
             dots: true,
@@ -517,6 +694,23 @@
             slidesToShow: 1,
             autoplay: true,
             autoplaySpeed: 4000
+        })
+        const element_menu_float = document.querySelectorAll(".element_menu_float")
+        const button_plus_look = document.querySelector(".button_plus_look")
+        const button_minus_look = document.querySelector(".button_minus_look")
+        button_plus_look.addEventListener("click", () => {
+            button_plus_look.classList.add("hide_button")
+            button_minus_look.classList.remove("hide_button")
+            for (let i = 0; i < element_menu_float.length; i++) {
+                element_menu_float[i].classList.add("show_navigation")
+            }
+        })
+        button_minus_look.addEventListener("click", () => {
+            button_minus_look.classList.add("hide_button")
+            button_plus_look.classList.remove("hide_button")
+            for (let i = 0; i < element_menu_float.length; i++) {
+                element_menu_float[i].classList.remove("show_navigation")
+            }
         })
     </script>
 </body>
