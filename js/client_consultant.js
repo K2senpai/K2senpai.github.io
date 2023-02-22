@@ -1,5 +1,5 @@
 let button_grid = document.querySelectorAll('.favoris_filter button')
-let grid_item_list = document.querySelectorAll(".grid_item_list")
+let grid_item_list = document.querySelectorAll(".grid_item_list, .responsive_element_grid")
 button_grid.forEach(function (element) {
     element.addEventListener("click", (e) => {
         e.preventDefault()
@@ -21,6 +21,22 @@ button_grid.forEach(function (element) {
             }
             else if (element.classList.contains("button_evenement_list")) {
                 const grid_item_list_element = grid_item_list.filter(grid_item => grid_item.classList.contains("evenement_grid"))
+                grid_item_list_element[0].classList.add("active_grid_item")
+            }
+            else if (element.classList.contains("button_abonnement_list")) {
+                const grid_item_list_element = grid_item_list.filter(grid_item => grid_item.classList.contains("abonnement_grid"))
+                grid_item_list_element[0].classList.add("active_grid_item")
+            }
+            else if (element.classList.contains("button_notification_list")) {
+                const grid_item_list_element = grid_item_list.filter(grid_item => grid_item.classList.contains("notification_grid"))
+                grid_item_list_element[0].classList.add("active_grid_item")
+            }
+            else if (element.classList.contains("button_evenement_cour_list")) {
+                const grid_item_list_element = grid_item_list.filter(grid_item => grid_item.classList.contains("evenement_list_grid"))
+                grid_item_list_element[0].classList.add("active_grid_item")
+            }
+            else if (element.classList.contains("button_propos_list")) {
+                const grid_item_list_element = grid_item_list.filter(grid_item => grid_item.classList.contains("information_compte_grid"))
                 grid_item_list_element[0].classList.add("active_grid_item")
             }
         }
