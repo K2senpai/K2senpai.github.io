@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="page_preload">
+        <div class="page_preload_text garde" id="my_text">Dashboard</div>
+        <div class="circle_big_bg">
+        </div>
+        <div class="circle_big_primary"></div>
+    </div>
+    <div class="modal_info_utilisateur_dashboard_container">
+        <div class="modal_info_utilisateur_dashboard">
+            <em class="bx bx-x-circle bx-sm close_modal_info_utilisateur_dashboard"></em>
+            <div class="image_profil_utilisateur"><img src="img/photo.jpg" alt="" srcset=""></div>
+            <h4>Details</h4>
+            <div class="grid_information_utilisateur">
+                <ul>
+                    <li><div><em class="bx bx-file"></em> Pseudonyme:</div> <span>Le chercheur</span></li>
+                    <li><div><em class="bx bx-file"></em> Nom:</div> <span>Steve zobo</span></li>
+                    <li><div><em class="bx bx-envelope"></em> Adresse mail:</div> <span>Zoboliucerin214@gmail.com</span></li>
+                    <li><div><em class="bx bx-category"></em> Catégorie:</div> <span>Client</span></li>
+                </ul>
+            </div>
+            <!-- <form action="" method="post">
+                <button type="submit" class="suppression_compte_signalés"><em class="bx bx-trash"></em>
+                    Supprimer</button>
+            </form> -->
+        </div>
+    </div>
+    <div class="modal_info_tutoriel_dashboard_container">
+        <div class="modal_info_tutoriel_dashboard">
+            <em class="bx bx-x-circle bx-sm close_modal_info_tutoriel_dashboard"></em>
+            <div class="image_profil_utilisateur"><img src="img/logo_vid.png" alt="" srcset=""></div>
+            <h4>Details</h4>
+            <div class="grid_information_utilisateur">
+                <ul>
+                    <li><div><em class="bx bx-file"></em> Titre:</div> <span>Comment immigrer au canada en toute sécurité</span></li>
+                    <li><div><em class="bx bx-user"></em> Auteur:</div> <span>Steve wilfried</span></li>
+                    <li><div><em class="bx bx-show"></em> Nombre de vues</div> <span>300k</span></li>
+                    <li><div><em class="bx bx-like"></em> Nombre de J'aime:</div> <span>20k</span></li>
+                </ul>
+            </div>
+            <form action="" method="post">
+                <button type="submit" class="suppression_tutoriel_dashboard"><em class="bx bx-trash"></em>
+                    Supprimer</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal_info_compte_signale_dashboard_container">
+        <div class="modal_info_compte_signale_dashboard">
+            <em class="bx bx-x-circle bx-sm close_modal_info_compte_signale_dashboard"></em>
+            <div class="image_profil_utilisateur"><img src="img/photo.jpg" alt="" srcset=""></div>
+            <h4>Details</h4>
+            <div class="grid_information_utilisateur">
+                <ul>
+                    <li><div><em class="bx bx-file"></em> Pseudonyme:</div> <span>Le voyageur</span></li>
+                    <li><div><em class="bx bx-file"></em> Nom:</div> <span>Steve wilfried</span></li>
+                    <li><div><em class="bx bx-envelope"></em> Adresse mail:</div> <span>wilfriedsteve@gmail.com</span></li>
+                    <li><div><em class="bx bx-camera"></em> Catégorie:</div> <span>Consultant</span></li>
+                    <li><div><em class="bx bx-camera"></em> Tutoriel:</div> <span>45</span></li>
+                    <li><div><em class="bx bx-calendar-event"></em> Evènements:</div> <span>13</span></li>
+                    <li><div><em class="bx bx-group"></em> Abonnés</div> <span>1.2k</span></li>
+                    <li><div><em class="bx bx-like"></em> Nombre de J'aime:</div> <span>300k</span></li>
+                    <li><div><em class="bx bx-user-x"></em> Signalé</div> <span>7</span></li>
+                </ul>
+            </div>
+            <form action="" method="post">
+                <button type="submit" class="suppression_compte_signalés"><em class="bx bx-trash"></em>
+                    Supprimer</button>
+            </form>
+        </div>
+    </div>
+    <header class="header_dashboard">
+        <nav class="navigation navigation_only">
+            <div class="navigation_item">
+                <div class="navigation_element">
+                    <a href="" class="navigation_item_element compte_client_actif"><img src="img/photo.jpg" alt=""
+                            srcset=""></a>
+                    <span class="theme element_menu_float navigation_item_element"
+                        title="Cliquez pour modifier le thème d'affichage"><em class="bx bx-moon bx-sm"></em></span>
+                    <span class="header_search element_menu_float navigation_item_element"
+                        title="Cliquez pour effectuer une recherche"><em class="bx bx-search-alt bx-sm"></em></span>
+                    <span class="alert_notification element_menu_float navigation_item_element"
+                        title="Cliquez pour voir vos notifications"><em class="bx bx-bell bx-sm"></em></span>
+                    <span class="deconnexion element_menu_float navigation_item_element"
+                        title="Cliquez ici pour vous déconnecter"><em class="bx bx-log-out bx-sm"></em></span>
+                    <span class="navigation_item_element" title="Cliquez pour voir plus"><em
+                            class="bx bx-chevron-down button_plus_look"></em><em
+                            class="bx bx-chevron-up button_minus_look hide_button"></em></span>
+                </div>
+                <div class="logo"><img src="img/canadink.png" alt="" srcset=""></div>
+                <button type="button" class="menu" id="menu"><em class="bx bx-menu-alt-right"></em></button>
+            </div>
+        </nav>
+    </header>
+    <section class="dashboard_container_general">
+        <section class="section_1_dashboard">
+            <header class="header_utilisateur_dashboard">
+                <div class="header_dashboard_tri">
+                    <button type="button" class="title active_menu active_list button_utilisateur_dashboard"><em
+                            class="bx bx-user"></em> Utilisateurs</button>
+                    <button type="button" class="title active_list button_tutoriel_dashboard"><em
+                            class="bx bx-video"></em> Tutoriels</button>
+                    <button type="button" class="title active_list button_message_dashboard"><em
+                            class="bx bx-message"></em> Messages</button>
+                    <button type="button" class="title active_list button_compte_signale_dashboard"><em
+                            class="bx bx-user-x"></em> compte signalés</button>
+                </div>
+                <form action="" method="post" class="search_dashboard">
+                    <input type="search" name="" id="" class="search_dashboard_input" placeholder="Ecrivez votre recherhe ici...">
+                </form>
+                <div class="container_action_dashboard_element">
+                    <form action="" method="post" class="sort">
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value="">Tous</option>
+                            <option value="">Comptes signalés</option>
+                            <option value="">Consultants</option>
+                        </select>
+                        <em class="bx bx-sort"></em>
+                    </form>
+                    <em class="bx bx-search button_search_dashboard"></em>
+                    <em class="bx bx-x close_button_search_dashboard"></em>
+                </div>
+            </header>
+            <section class="container_utilisateur_dashboard">
+                <ul class="list_dashboard list_utilisateur active_list">
+                    <li class="list_utilisateur_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_utilisateur_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_1.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_utilisateur_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_2.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_utilisateur_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_utilisateur_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_utilisateur_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_utilisateur_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_utilisateur_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_utilisateur_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_utilisateur_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_utilisateur_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_utilisateur_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_1.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                </ul>
+                <ul class="list_dashboard list_tutoriel">
+                    <li class="list_tutoriel_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/logo_vid.png" alt="" srcset=""></div>
+                        <h4>Comment immigrer au canada</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_tutoriel_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/logo_vid.png" alt="" srcset=""></div>
+                        <h4>Comment immigrer au canada</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_tutoriel_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/logo_vid.png" alt="" srcset=""></div>
+                        <h4>Comment immigrer au canada</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_tutoriel_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/logo_vid.png" alt="" srcset=""></div>
+                        <h4>Comment immigrer au canada</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_tutoriel_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/logo_vid.png" alt="" srcset=""></div>
+                        <h4>Comment immigrer au canada</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_tutoriel_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/logo_vid.png" alt="" srcset=""></div>
+                        <h4>Comment immigrer au canada</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_tutoriel_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/logo_vid.png" alt="" srcset=""></div>
+                        <h4>Comment immigrer au canada</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_tutoriel_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/logo_vid.png" alt="" srcset=""></div>
+                        <h4>Comment immigrer au canada</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_tutoriel_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/logo_vid.png" alt="" srcset=""></div>
+                        <h4>Comment immigrer au canada</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_tutoriel_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/logo_vid.png" alt="" srcset=""></div>
+                        <h4>Comment immigrer au canada</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_tutoriel_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/logo_vid.png" alt="" srcset=""></div>
+                        <h4>Comment immigrer au canada</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_tutoriel_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/logo_vid.png" alt="" srcset=""></div>
+                        <h4>Comment immigrer au canada</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                </ul>
+                <ul class="list_dashboard list_message">
+                    <div class="list_message_container">
+                        <li class="list_message_dashboard">
+                            <div class="image_utilisateur_dashboard"><img src="img/photo.jpg" alt="" srcset=""></div>
+                            <h4>Steve bisco <br><span>+2 nouveaux messages</span></h4>
+                            <button type="button" class="open_box_message"><em
+                                    class="bx bx-chevron-right"></em></button>
+                        </li>
+                        <li class="list_message_dashboard">
+                            <div class="image_utilisateur_dashboard"><img src="img/photo_1.jpg" alt="" srcset=""></div>
+                            <h4>Steve Wilfried</h4>
+                            <button type="button"><em class="bx bx-chevron-right"></em></button>
+                        </li>
+                        <li class="list_message_dashboard">
+                            <div class="image_utilisateur_dashboard"><img src="img/photo_2.jpg" alt="" srcset=""></div>
+                            <h4>Steve Wilfried</h4>
+                            <button type="button"><em class="bx bx-chevron-right"></em></button>
+                        </li>
+                        <li class="list_message_dashboard">
+                            <div class="image_utilisateur_dashboard"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                            <h4>Steve Wilfried</h4>
+                            <button type="button"><em class="bx bx-chevron-right"></em></button>
+                        </li>
+                        <li class="list_message_dashboard">
+                            <div class="image_utilisateur_dashboard"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                            <h4>Steve Wilfried</h4>
+                            <button type="button"><em class="bx bx-chevron-right"></em></button>
+                        </li>
+                        <li class="list_message_dashboard">
+                            <div class="image_utilisateur_dashboard"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+                            <h4>Steve Wilfried</h4>
+                            <button type="button"><em class="bx bx-chevron-right"></em></button>
+                        </li>
+                        <li class="list_message_dashboard">
+                            <div class="image_utilisateur_dashboard"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                            <h4>Steve Wilfried</h4>
+                            <button type="button"><em class="bx bx-chevron-right"></em></button>
+                        </li>
+                        <li class="list_message_dashboard">
+                            <div class="image_utilisateur_dashboard"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                            <h4>Steve Wilfried</h4>
+                            <button type="button"><em class="bx bx-chevron-right"></em></button>
+                        </li>
+                        <li class="list_message_dashboard">
+                            <div class="image_utilisateur_dashboard"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+                            <h4>Steve Wilfried</h4>
+                            <button type="button"><em class="bx bx-chevron-right"></em></button>
+                        </li>
+                    </div>
+                    <div class="container_conversation_dashboard">
+                        <header class="message_dashboard_header">
+                            <div class="image_utilisateur_dashboard_container">
+                                <div class="image_utilisateur_dashboard"><img src="img/photo.jpg" alt="" srcset="">
+                                </div>
+                                <h3>Steve bisco</h3>
+                            </div>
+                            <em class="bx bx-x close_box_message"></em>
+                        </header>
+                        <section class="contenu_messagerie_dashboard">
+                            <div class="conteneur_message">
+                                <div class="date_message_dashboard_initiate">10/03/2023</div>
+                                <div class="contenu_messagerie_dashboard_item contenu_message_expediteur">
+                                    <p>Bonjour ceci est un message de test</p>
+                                </div>
+                            </div>
+                            <div class="conteneur_message">
+                                <div class="contenu_messagerie_dashboard_item contenu_message_admin">
+                                    <p>Bonjour et bienvenue sur le réseau Canadink</p>
+                                </div>
+                                <div class="contenu_messagerie_dashboard_item contenu_message_admin">
+                                    <p>Bonjour et bienvenue sur le réseau Canadink</p>
+                                </div>
+                            </div>
+                        </section>
+                        <form action="" method="post" class="form_post_dashboard">
+                            <input type="file" class="bx bx-link" style="width: 0;height: 0;opacity: 0;z-index: -1;">
+                            <em class="bx bx-link"></em>
+                            <textarea name="" id="" placeholder="Ecrivez votre message ici..."></textarea>
+                            <button type="submit"><em class="bx bx-send"></em></button>
+                        </form>
+                    </div>
+                </ul>
+                <ul class="list_dashboard list_compte_signale">
+                    <li class="list_compte_signale_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_compte_signale_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_1.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_compte_signale_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_2.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_compte_signale_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_compte_signale_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_compte_signale_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_compte_signale_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_compte_signale_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_compte_signale_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_compte_signale_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_compte_signale_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                    <li class="list_compte_signale_dashboard">
+                        <div class="image_utilisateur_dashboard"><img src="img/photo_1.jpg" alt="" srcset=""></div>
+                        <h4>Steve Wilfried</h4>
+                        <button type="button"><em class="bx bx-chevron-right"></em></button>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section class="statistique_dashboard">
+            <section class="statistique_block">
+                <div class="vague">
+                    <div class="stat_utilisateur" style="border-top: 2px solid green;">
+                        <div>
+                            <h3 style="color:#0E6C78"><em class="bx bx-user"></em> Utilisateurs</h3>
+                            <div class="stat_utilisateur_contain">
+                                <strong>1250</strong>
+                                <ul>
+                                    <li style="color: #088dcd;"><em class="bx bxs-circle"></em> 1000 abonnés</li>
+                                    <li style="color: #0E6C78;"><em class="bx bxs-circle"></em> 250 consultants</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <h3 style="color:green"><em class="bx bx-user-check"></em> En ligne</h3>
+                            <div class="stat_utilisateur_contain">
+                                <strong>250</strong>
+                                <ul>
+                                    <li style="color: gray;"><em class="bx bxs-circle"></em> 200 visiteurs</li>
+                                    <li style="color: #0E6C78;"><em class="bx bxs-circle"></em> 50 abonnés</li>
+                                    <li style="color: olivedrab;"><em class="bx bxs-circle"></em> 5 consultants</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="stat_utilisateur" style="border-top: 2px solid deeppink;">
+                        <h3 style="color:deeppink"><em class="bx bx-user-x"></em> Comptes signalés</h3>
+                        <div class="stat_utilisateur_contain">
+                            <strong>20</strong>
+                            <ul>
+                                <li style="color: orangered;"><em class="bx bxs-circle"></em> 5 en attentes</li>
+                                <li style="color: deeppink;"><em class="bx bxs-circle"></em> 15 supprimés</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="vague">
+                    <div class="stat_utilisateur" style="border-top: 2px solid black;">
+                        <h3 style="color: black;"><em class="bx bx-camera"></em> Tutoriels</h3>
+                        <div class="stat_utilisateur_contain">
+                            <strong>1250</strong>
+                            <ul>
+                                <li style="color: gold;"><em class="bx bxs-circle"></em> 1000 appréciés</li>
+                                <li style="color: orangered;"><em class="bx bxs-circle"></em> 250 signalés</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="stat_utilisateur" style="border-top: 2px solid #088dcd;">
+                        <h3 style="color: #088dcd;"><em class="bx bx-message"></em> Messages</h3>
+                        <div class="stat_utilisateur_contain">
+                            <strong>20</strong>
+                            <ul>
+                                <li style="color: deeppink;"><em class="bx bxs-circle"></em> 5 non lus</li>
+                                <li style="color: #088dcd;"><em class="bx bxs-circle"></em> 15 lus</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="stat_utilisateur" style="border-top: 2px solid greenyellow;">
+                        <h3 style="color: greenyellow;"><em class="bx bx-message"></em> Evènements</h3>
+                        <div class="stat_utilisateur_contain">
+                            <strong>10</strong>
+                            <ul>
+                                <li style="color: orange;"><em class="bx bxs-circle"></em>7 En attentes</li>
+                                <li style="color: greenyellow;"><em class="bx bxs-circle"></em>1 En cours</li>
+                                <li style="color: deeppink;"><em class="bx bxs-circle"></em>2 Annulés</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="statistique_graphe">
+                <div class="statistique_graphe_bar">
+                    <canvas id="myChart-2"></canvas>
+                </div>
+                <div class="statistique_graphe_circle">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </section>
+        </section>
+    </section>
+    <div class="menu_container">
+        <div class="menu_image_container">
+            <div class="menu_image menu_image_visible"><img src="img/photo_2.jpg" alt="" srcset=""></div>
+            <div class="menu_image connexion_menu"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+            <div class="menu_image tutoriel_menu"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+            <div class="menu_image faq_menu"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+            <div class="menu_image propos_menu"><img src="img/photo_6.jpg" alt="" srcset=""></div>
+            <div class="menu_image contact_menu"><img src="img/photo_7.jpg" alt="" srcset=""></div>
+        </div>
+        <div class="menu_text">
+            <ul>
+                <li class="connexion_menu"><a href="client.html"><span class="before_link">01</span>Mon Compte</a>
+                </li>
+                <li class="tutoriel_menu"><a href=""><span class="before_link">02</span> Nos tutoriels</a></li>
+                <li class="faq_menu"><a href=""><span class="before_link">03</span> Faq</a></li>
+                <li class="propos_menu"><a href=""><span class="before_link">04</span> A propos de nous</a></li>
+                <li class="contact_menu"><a href=""><span class="before_link">05</span> Contactez-nous</a></li>
+            </ul>
+            <!-- <form action="" method="post" class="form_search">
+                <input type="search" name="" id="" class="search_general">
+                <em class="bx bx-search bx-lg"></em>
+            </form> -->
+        </div>
+        <button type="button" class="menu close" id="close"><em class="bx bx-x bx-sm"></em></button>
+    </div>
+    <div id="cursor"></div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/splitmin.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="chart.js/package/dist/chart.min.js"></script>
+
+    <script>
+        const my_text = new SplitType("#my_text")
+        const element = document.querySelectorAll(".page_preload_text div")
+        const tab = Array.from(element)
+        const tl = gsap.timeline()
+        tl.to(".circle_big_primary", {
+            scale: 100,
+            duration: 1
+        })
+            .from(".char", {
+                y: 100,
+                opacity: 0,
+                delay: 0.5,
+                duration: 1,
+                stagger: {
+                    each: 0.1,
+                    from: "edges"
+                },
+                ease: "back.out(2)"
+            })
+            .from(".circle_big_bg", {
+                visibility: "hidden",
+                delay: 0.5,
+                duration: 0.1
+            })
+            .to(".circle_big_bg", {
+                scale: 100,
+                duration: 1
+            })
+            .to(".page_preload", {
+                opacity: 0,
+                zIndex: -1
+            })
+        const element_menu_float = document.querySelectorAll(".element_menu_float")
+        const button_plus_look = document.querySelector(".button_plus_look")
+        const button_minus_look = document.querySelector(".button_minus_look")
+        button_plus_look.addEventListener("click", () => {
+            button_plus_look.classList.add("hide_button")
+            button_minus_look.classList.remove("hide_button")
+            for (let i = 0; i < element_menu_float.length; i++) {
+                element_menu_float[i].classList.add("show_navigation")
+            }
+        })
+        button_minus_look.addEventListener("click", () => {
+            button_minus_look.classList.add("hide_button")
+            button_plus_look.classList.remove("hide_button")
+            for (let i = 0; i < element_menu_float.length; i++) {
+                element_menu_float[i].classList.remove("show_navigation")
+            }
+        })
+        // const ctx = document.getElementById('myChart').getContext('2d');
+        // const myChart = new Chart(ctx, {
+        //     type: 'doughnut',
+        //     data: {
+        //         labels: ['Visiteurs', 'Consultants', 'Abonnés'],
+        //         datasets: [{
+        //             label: '# of Votes',
+        //             data: [125, 9, 78],
+        //             backgroundColor: [
+        //                 '#F72585',
+        //                 '#4895EF',
+        //                 '#F709B7',
+        //             ],
+        //             borderColor: [
+        //                 'rgba(255, 99, 132, 1)',
+        //                 'rgba(54, 162, 235, 1)',
+        //                 'rgba(255, 206, 86, 1)',
+        //             ],
+        //             borderWidth: 1
+        //         }]
+        //     },
+        //     options: {
+        //         scales: {
+        //             y: {
+        //                 beginAtZero: true,
+        //                 stacked: true,
+        //             }
+        //         },
+        //     }
+        // });
+        const ctx2 = document.getElementById('myChart-2').getContext('2d');
+        const myChart2 = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Decembre'],
+                datasets: [{
+                    label: 'Visiteurs',
+                    data: [12, 19, 3, 5],
+                    backgroundColor: [
+                        '#F72585',
+                        '#4895EF',
+                        '#F709B7',
+                        '#4CC9F0',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'x',
+            }
+        });
+
+        let button_title = document.querySelectorAll('.header_dashboard_tri .title')
+        let list_item_grid = document.querySelectorAll(".list_dashboard")
+        button_title.forEach(function (element) {
+            element.addEventListener("click", (e) => {
+                e.preventDefault()
+                button_title = Array.from(button_title)
+                const active_element = button_title.filter(button => button.classList.contains("active_menu"))
+                active_element[0].classList.remove("active_menu")
+                if (!element.classList.contains("active_menu")) {
+                    element.classList.add("active_menu")
+                    list_item_grid = Array.from(list_item_grid)
+                    const active_grid = list_item_grid.filter(grid => grid.classList.contains("active_list"))
+                    active_grid[0].classList.remove("active_list")
+                    if (element.classList.contains("button_utilisateur_dashboard")) {
+                        const grid_item_list_element = list_item_grid.filter(grid_item => grid_item.classList.contains("list_utilisateur"))
+                        grid_item_list_element[0].classList.add("active_list")
+                    }
+                    else if (element.classList.contains("button_message_dashboard")) {
+                        const grid_item_list_element = list_item_grid.filter(grid_item => grid_item.classList.contains("list_message"))
+                        grid_item_list_element[0].classList.add("active_list")
+                    }
+                    else if (element.classList.contains("button_tutoriel_dashboard")) {
+                        const grid_item_list_element = list_item_grid.filter(grid_item => grid_item.classList.contains("list_tutoriel"))
+                        grid_item_list_element[0].classList.add("active_list")
+                    }
+                    else if (element.classList.contains("button_compte_signale_dashboard")) {
+                        const grid_item_list_element = list_item_grid.filter(grid_item => grid_item.classList.contains("list_compte_signale"))
+                        grid_item_list_element[0].classList.add("active_list")
+                    }
+                }
+            })
+        })
+
+        let open_box_message = document.querySelectorAll(".open_box_message")
+        let close_box_message = document.querySelector(".close_box_message")
+        const container_conversation_dashboard = document.querySelector(".container_conversation_dashboard")
+        const list_message_container = document.querySelector(".list_message_container")
+
+        open_box_message.forEach(function (element) {
+            element.addEventListener("click", (e) => {
+                e.preventDefault()
+                list_message_container.classList.add("hide_list_message")
+                container_conversation_dashboard.classList.add("active_container")
+            })
+        })
+        close_box_message.addEventListener("click", () => {
+            container_conversation_dashboard.classList.remove("active_container")
+            list_message_container.classList.remove("hide_list_message")
+        })
+
+        let list_utilisateur_dashboard = document.querySelectorAll(".list_utilisateur_dashboard button")
+        let list_tutoriel_dashboard = document.querySelectorAll(".list_tutoriel_dashboard button")
+        let list_compte_signale_dashboard = document.querySelectorAll(".list_compte_signale_dashboard button")
+        let modal_info_utilisateur_dashboard_container = document.querySelector(".modal_info_utilisateur_dashboard_container")
+        let modal_info_tutoriel_dashboard_container = document.querySelector(".modal_info_tutoriel_dashboard_container")
+        let modal_info_compte_signale_dashboard_container = document.querySelector(".modal_info_compte_signale_dashboard_container")
+        const modal_info_utilisateur_dashboard = document.querySelector(".modal_info_utilisateur_dashboard")
+        const modal_info_tutoriel_dashboard = document.querySelector(".modal_info_tutoriel_dashboard")
+        const modal_info_compte_signale_dashboard = document.querySelector(".modal_info_compte_signale_dashboard")
+        const close_modal_info_utilisateur_dashboard = document.querySelector(".close_modal_info_utilisateur_dashboard")
+        const close_modal_info_tutoriel_dashboard = document.querySelector(".close_modal_info_tutoriel_dashboard")
+        const close_modal_info_compte_signale_dashboard = document.querySelector(".close_modal_info_compte_signale_dashboard")
+
+        list_utilisateur_dashboard.forEach(function (element) {
+            element.addEventListener("click", (e) => {
+                e.preventDefault()
+                modal_info_utilisateur_dashboard_container.classList.add("active_modal_info")
+            })
+        })
+        list_tutoriel_dashboard.forEach(function (element) {
+            element.addEventListener("click", (e) => {
+                e.preventDefault()
+                modal_info_tutoriel_dashboard_container.classList.add("active_modal_info")
+            })
+        })
+        list_compte_signale_dashboard.forEach(function (element) {
+            element.addEventListener("click", (e) => {
+                e.preventDefault()
+                modal_info_compte_signale_dashboard_container.classList.add("active_modal_info")
+            })
+        })
+        modal_info_utilisateur_dashboard_container.addEventListener("click", () => {
+            modal_info_utilisateur_dashboard_container.classList.remove("active_modal_info")
+        })
+        close_modal_info_utilisateur_dashboard.addEventListener("click", () => {
+            modal_info_utilisateur_dashboard_container.classList.remove("active_modal_info")
+        })
+        modal_info_utilisateur_dashboard.addEventListener("click", (e) => {
+            e.stopPropagation()
+        })
+
+        modal_info_tutoriel_dashboard_container.addEventListener("click", () => {
+            modal_info_tutoriel_dashboard_container.classList.remove("active_modal_info")
+        })
+        close_modal_info_tutoriel_dashboard.addEventListener("click", () => {
+            modal_info_tutoriel_dashboard_container.classList.remove("active_modal_info")
+        })
+        modal_info_tutoriel_dashboard.addEventListener("click", (e) => {
+            e.stopPropagation()
+        })
+ 
+        modal_info_compte_signale_dashboard_container.addEventListener("click", () => {
+            modal_info_compte_signale_dashboard_container.classList.remove("active_modal_info")
+        })
+        close_modal_info_compte_signale_dashboard.addEventListener("click", () => {
+            modal_info_compte_signale_dashboard_container.classList.remove("active_modal_info")
+        })
+        modal_info_compte_signale_dashboard.addEventListener("click", (e) => {
+            e.stopPropagation()
+        })
+
+        const button_search_dashboard_click = document.querySelector(".button_search_dashboard")
+        const button_search_dashboard = document.querySelector(".search_dashboard")
+        const header_dashboard_tri = document.querySelector(".header_dashboard_tri")
+        const close_button_search_dashboard = document.querySelector(".close_button_search_dashboard")
+
+        button_search_dashboard_click.addEventListener("click",()=>{
+            header_dashboard_tri.classList.add("hide_header_dashboard")
+            button_search_dashboard.classList.add("show_search")
+            button_search_dashboard_click.classList.add("hide")
+            close_button_search_dashboard.classList.add("show")
+        })
+        close_button_search_dashboard.addEventListener("click", ()=>{
+            header_dashboard_tri.classList.remove("hide_header_dashboard")
+            button_search_dashboard.classList.remove("show_search")
+            button_search_dashboard_click.classList.remove("hide")
+            close_button_search_dashboard.classList.remove("show")
+        })
+    </script>
+</body>
+
+</html>
