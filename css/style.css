@@ -3783,7 +3783,10 @@ button.active_button_favoris {
         width: 100%;
         overflow-x: scroll;
     }
-
+.header_dashboard_tri
+{
+    width: 100vw;
+}
     .section_1_dashboard {
         height: 100vh;
     }
