@@ -12,6 +12,132 @@
 </head>
 
 <body>
+    <div class="modal_feuille_route modal_l">
+        <form action="" method="post">
+            <ul class="list_modal_feuille_route">
+                <div class="title_feuille_route">Que voulez vous faire ?</div>
+                <li>
+                    <input type="checkbox" id="canada_school">
+                    <label for="canada_school">Etudier au Canada</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="canada_work">
+                    <label for="canada_work">Travailler au Canada</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="canada_immigration">
+                    <label for="canada_immigration">Immigrer au Canada</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="canada_visite">
+                    <label for="canada_visite">Visiter le Canada</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="canada_investi">
+                    <label for="canada_investi">Investir au Canada</label>
+                </li>
+            </ul>
+            <button type="submit"><em class="bx bx-check"></em> Démarrer</button>
+        </form>
+    </div>
+    <div class="modal_message_right">
+        <div class="container_conversation_dashboard">
+            <header class="message_dashboard_header">
+                <div class="image_utilisateur_dashboard_container">
+                    <div class="image_utilisateur_dashboard"><img src="img/photo.jpg" alt="" srcset="">
+                    </div>
+                    <h3>Steve bisco</h3>
+                </div>
+                <em class="bx bx-x close_box_message"></em>
+            </header>
+            <section class="contenu_messagerie_dashboard">
+                <div class="conteneur_message">
+                    <div class="date_message_dashboard_initiate">10/03/2023</div>
+                    <div class="contenu_messagerie_dashboard_item contenu_message_expediteur">
+                        <p>Bonjour ceci est un message de test</p>
+                    </div>
+                </div>
+                <div class="conteneur_message">
+                    <div class="contenu_messagerie_dashboard_item contenu_message_admin">
+                        <p>Bonjour et bienvenue sur le réseau Canadink</p>
+                    </div>
+                    <div class="contenu_messagerie_dashboard_item contenu_message_admin">
+                        <p>Bonjour et bienvenue sur le réseau Canadink</p>
+                    </div>
+                </div>
+            </section>
+            <form action="" method="post" class="form_post_dashboard">
+                <!-- <input type="file" class="bx bx-link" style="width: 0;height: 0;opacity: 0;z-index: -1;">
+                <em class="bx bx-link"></em> -->
+                <textarea name="" id="" placeholder="Ecrivez votre message ici..."></textarea>
+                <button type="submit"><em class="bx bx-send"></em></button>
+            </form>
+        </div>
+    </div>
+    <div class="modal_deconnexion modal_l">
+        <form action="" method="post">
+            <p>Êtes-vous sûr de vouloir vous déconnecter ?</p>
+            <input type="radio" name="choice_deconnexion" id="oui_deconnexion">
+            <input type="radio" name="choice_deconnexion" id="nom_deconnexion">
+            <div class="button_deconnexion_replace">
+                <button type="button" class=""><em class="bx bx-sad"></em> Oui</button>
+                <button type="button" class=""><em class="bx bx-smile"></em> Non</button>
+            </div>
+        </form>
+    </div>
+    <div class="modal_notification modal_l">
+        <ul class="list_modal_notification">
+            <a href="" class="link_all_notification">
+                <div class="total_all_notification">15</div> Voir tous <em class="bx bx-chevron-right"></em>
+            </a>
+            <li>
+                <a href="" class="list_modal_notification_item">
+                    <div class="image_emetteur"><img src="img/photo.jpg" alt="" srcset=""></div>
+                    <span>Lot. Maiores, similique excepturi! Fuga, consectetur voluptstinctio aut!</span>
+                    <small>10/02/2023 à 10h00</small>
+                </a>
+            </li>
+            <li>
+                <a href="" class="list_modal_notification_item">
+                    <div class="image_emetteur"><img src="img/photo_1.jpg" alt="" srcset=""></div>
+                    <span>Lorem icing elit. Maiores, similique excepturi! Fuga, consectetur voluptstinctio aut!</span>
+                    <small>10/02/2023 à 09h07</small>
+                </a>
+            </li>
+            <li>
+                <a href="" class="list_modal_notification_item">
+                    <div class="image_emetteur"><img src="img/photo_2.jpg" alt="" srcset=""></div>
+                    <span>Lorem ipsum excepturi! Fuga, consectetur voluptstinctio aut!</span>
+                    <small>10/02/2023 à 00h00</small>
+                </a>
+            </li>
+            <li>
+                <a href="" class="list_modal_notification_item">
+                    <div class="image_emetteur"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                    <span>Lorem ipsum excepturi! Fuga, consectetur voluptstinctio aut!</span>
+                    <small>10/02/2023 à 00h00</small>
+                </a>
+            </li>
+            <li>
+                <a href="" class="list_modal_notification_item">
+                    <div class="image_emetteur"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                    <span>Lorem ipsum excepturi! Fuga, consectetur voluptstinctio aut!</span>
+                    <small>10/02/2023 à 00h00</small>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="modal_poser_question modal_l">
+        <form action="" method="post">
+            <textarea name="" id="" placeholder="Ecrivez votre question ici..."></textarea>
+            <button type="submit"><em class="bx bx-mail-send"></em> Envoyer</button>
+        </form>
+    </div>
+    <div class="modal_recherche modal_l">
+        <form action="" method="post">
+            <input type="search" placeholder="Entrez votre recherche ici...">
+        </form>
+    </div>
     <div class="page_preload">
         <div class="page_preload_text garde" id="my_text">
             Etudier au Canada
@@ -22,21 +148,33 @@
     </div>
     <nav class="navigation">
         <div class="navigation_item">
-            <span class="theme navigation_item_element" title="Cliquez pour modifier le thème d'affichage"><em
-                    class="bx bx-moon bx-sm"></em></span>
-            <span class="header_search navigation_item_element" title="Cliquez pour effectuer une recherche"><em
-                    class="bx bx-search-alt bx-sm"></em></span>
-            <span class="alert_notification navigation_item_element" title="Cliquez pour voir vos notifications"><em
-                    class="bx bx-bell bx-sm"></em></span>
+            <div class="navigation_element">
+                <a href="" class="navigation_item_element compte_client_actif"><img src="img/photo.jpg" alt=""
+                        srcset=""></a>
+                <span class="theme element_menu_float navigation_item_element"
+                    title="Cliquez pour modifier le thème d'affichage"><em class="bx bx-moon bx-sm"></em></span>
+                <span class="header_search element_menu_float navigation_item_element"
+                    title="Cliquez pour effectuer une recherche"><em class="bx bx-search-alt bx-sm"></em></span>
+                <span class="start_feuille_route element_menu_float navigation_item_element"
+                    title="Cliquez pour démarrer une feuille de route"><em class="bx bx-store-alt bx-sm"></em></span>
+                <span class="alert_notification element_menu_float navigation_item_element"
+                    title="Cliquez pour voir vos notifications"><em class="bx bx-bell bx-sm"></em></span>
+                <span class="deconnexion element_menu_float navigation_item_element"
+                    title="Cliquez ici pour vous déconnecter"><em class="bx bx-log-out bx-sm"></em></span>
+                <span class="navigation_item_element" title="Cliquez pour voir plus"><em
+                        class="bx bx-chevron-down button_plus_look"></em><em
+                        class="bx bx-chevron-up button_minus_look hide_button"></em></span>
+            </div>
             <div class="logo"><img src="img/canadink.png" alt="" srcset=""></div>
             <button type="button" class="menu" id="menu"><em class="bx bx-menu-alt-right"></em></button>
         </div>
     </nav>
     <section class="categorie_4_wrapper categorie_container_categorie">
-        <h2 class="categorie_1_title">Etudier au Canada</h2>
+        <h2 class="categorie_1_title">Etudier au Canada <button type="button" class="poser_question"><em
+                    class="bx bx-envelope"></em> Posez votre question</button></h2>
         <section class="categorie_4 categorie_container_item">
             <article class="col_1">
-                <a href="https://k2senpai.github.io/video_watch.html" class="video_item"><video muted src="img/video_20.mp4" muted
+                <a href="video_watch.html" class="video_item"><video muted src="img/video_20.mp4" muted
                         class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
                 <div class="video_item_info">
                     <span class="date_video_item">12 Juillet 2023</span>
@@ -57,7 +195,11 @@
                     <a href="" class="video_item"><video muted src="img/video_11.mp4" muted
                             class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
                     <div class="video_item_info">
-                        <span class="date_video_item">12 Juillet 2023</span>
+                        <div class="image_author_categorie"><img src="img/photo_1.jpg" alt="" srcset=""></div>
+                        <div class="date_video_item">
+                            <span>Steve wilfried</span>
+                            <span> 12 Juillet 2023</span>
+                        </div>
                     </div>
                     <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
                 </div>
@@ -65,7 +207,11 @@
                     <a href="" class="video_item"><video muted src="img/video_21.mp4" muted
                             class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
                     <div class="video_item_info">
-                        <span class="date_video_item">12 Juillet 2023</span>
+                        <div class="image_author_categorie"><img src="img/photo_2.jpg" alt="" srcset=""></div>
+                        <div class="date_video_item">
+                            <span>Steve wilfried</span>
+                            <span> 12 Juillet 2023</span>
+                        </div>
                     </div>
                     <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
                 </div>
@@ -73,34 +219,146 @@
                     <a href="" class="video_item"><video muted src="img/video_13.mp4" muted
                             class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
                     <div class="video_item_info">
-                        <span class="date_video_item">12 Juillet 2023</span>
+                        <div class="image_author_categorie"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <div class="date_video_item">
+                            <span>Steve wilfried</span>
+                            <span> 12 Juillet 2023</span>
+                        </div>
+                    </div>
+                    <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
+                </div>
+                <div class="col_2_item">
+                    <a href="" class="video_item"><video muted src="img/video_13.mp4" muted
+                            class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
+                    <div class="video_item_info">
+                        <div class="image_author_categorie"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <div class="date_video_item">
+                            <span>Steve wilfried</span>
+                            <span> 12 Juillet 2023</span>
+                        </div>
+                    </div>
+                    <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
+                </div>
+                <div class="col_2_item">
+                    <a href="" class="video_item"><video muted src="img/video_13.mp4" muted
+                            class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
+                    <div class="video_item_info">
+                        <div class="image_author_categorie"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <div class="date_video_item">
+                            <span>Steve wilfried</span>
+                            <span> 12 Juillet 2023</span>
+                        </div>
+                    </div>
+                    <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
+                </div>
+                <div class="col_2_item">
+                    <a href="" class="video_item"><video muted src="img/video_13.mp4" muted
+                            class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
+                    <div class="video_item_info">
+                        <div class="image_author_categorie"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <div class="date_video_item">
+                            <span>Steve wilfried</span>
+                            <span> 12 Juillet 2023</span>
+                        </div>
+                    </div>
+                    <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
+                </div>
+                <div class="col_2_item">
+                    <a href="" class="video_item"><video muted src="img/video_13.mp4" muted
+                            class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
+                    <div class="video_item_info">
+                        <div class="image_author_categorie"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <div class="date_video_item">
+                            <span>Steve wilfried</span>
+                            <span> 12 Juillet 2023</span>
+                        </div>
+                    </div>
+                    <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
+                </div>
+                <div class="col_2_item">
+                    <a href="" class="video_item"><video muted src="img/video_13.mp4" muted
+                            class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
+                    <div class="video_item_info">
+                        <div class="image_author_categorie"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <div class="date_video_item">
+                            <span>Steve wilfried</span>
+                            <span> 12 Juillet 2023</span>
+                        </div>
+                    </div>
+                    <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
+                </div>
+                <div class="col_2_item">
+                    <a href="" class="video_item"><video muted src="img/video_13.mp4" muted
+                            class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
+                    <div class="video_item_info">
+                        <div class="image_author_categorie"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <div class="date_video_item">
+                            <span>Steve wilfried</span>
+                            <span> 12 Juillet 2023</span>
+                        </div>
+                    </div>
+                    <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
+                </div>
+                <div class="col_2_item">
+                    <a href="" class="video_item"><video muted src="img/video_13.mp4" muted
+                            class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
+                    <div class="video_item_info">
+                        <div class="image_author_categorie"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <div class="date_video_item">
+                            <span>Steve wilfried</span>
+                            <span> 12 Juillet 2023</span>
+                        </div>
+                    </div>
+                    <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
+                </div>
+                <div class="col_2_item">
+                    <a href="" class="video_item"><video muted src="img/video_13.mp4" muted
+                            class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
+                    <div class="video_item_info">
+                        <div class="image_author_categorie"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <div class="date_video_item">
+                            <span>Steve wilfried</span>
+                            <span> 12 Juillet 2023</span>
+                        </div>
                     </div>
                     <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
                 </div>
             </article>
-            <article class="col_3">
+            <!-- <article class="col_3">
                 <div class="col_2_item">
                     <a href="" class="video_item"><video muted src="img/video_15.mp4" muted
                             class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
-                    <div class="video_item_info">
-                        <span class="date_video_item">12 Juillet 2023</span>
-                    </div>
+                            <div class="video_item_info">
+                                <div class="image_author_categorie"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                                <div class="date_video_item">
+                                    <span>Steve wilfried</span>
+                                   <span> 12 Juillet 2023</span>
+                                </div>
+                            </div>
                     <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
                 </div>
                 <div class="col_2_item">
                     <a href="" class="video_item"><video muted src="img/video_18.mp4" muted
                             class="hide_video"></video><img src="img/photo_6.jpg" alt="" srcset=""></a>
-                    <div class="video_item_info">
-                        <span class="date_video_item">12 Juillet 2023</span>
-                    </div>
+                            <div class="video_item_info">
+                                <div class="image_author_categorie"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+                                <div class="date_video_item">
+                                    <span>Steve wilfried</span>
+                                   <span> 12 Juillet 2023</span>
+                                </div>
+                            </div>
                     <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
                 </div>
                 <div class="col_2_item">
                     <a href="" class="video_item"><video muted src="img/video_2.mp4" muted
                             class="hide_video"></video><img src="img/photo_3.jpg" alt="" srcset=""></a>
-                    <div class="video_item_info">
-                        <span class="date_video_item">12 Juillet 2023</span>
-                    </div>
+                            <div class="video_item_info">
+                                <div class="image_author_categorie"><img src="img/photo_6.jpg" alt="" srcset=""></div>
+                                <div class="date_video_item">
+                                    <span>Steve wilfried</span>
+                                   <span> 12 Juillet 2023</span>
+                                </div>
+                            </div>
                     <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
                 </div>
             </article>
@@ -108,28 +366,40 @@
                 <div class="col_2_item">
                     <a href="" class="video_item"><video muted src="img/video_12.mp4" muted
                             class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
-                    <div class="video_item_info">
-                        <span class="date_video_item">12 Juillet 2023</span>
-                    </div>
+                            <div class="video_item_info">
+                                <div class="image_author_categorie"><img src="img/photo_7.jpg" alt="" srcset=""></div>
+                                <div class="date_video_item">
+                                    <span>Steve wilfried</span>
+                                   <span> 12 Juillet 2023</span>
+                                </div>
+                            </div>
                     <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
                 </div>
                 <div class="col_2_item">
                     <a href="" class="video_item"><video muted src="img/video_23.mp4" muted
                             class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
-                    <div class="video_item_info">
-                        <span class="date_video_item">12 Juillet 2023</span>
-                    </div>
+                            <div class="video_item_info">
+                                <div class="image_author_categorie"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                                <div class="date_video_item">
+                                    <span>Steve wilfried</span>
+                                   <span> 12 Juillet 2023</span>
+                                </div>
+                            </div>
                     <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
                 </div>
                 <div class="col_2_item">
                     <a href="" class="video_item"><video muted src="img/video_21.mp4" muted
                             class="hide_video"></video><img src="img/photo_4.jpg" alt="" srcset=""></a>
-                    <div class="video_item_info">
-                        <span class="date_video_item">12 Juillet 2023</span>
-                    </div>
+                            <div class="video_item_info">
+                                <div class="image_author_categorie"><img src="img/photo_2.jpg" alt="" srcset=""></div>
+                                <div class="date_video_item">
+                                    <span>Steve wilfried</span>
+                                   <span> 12 Juillet 2023</span>
+                                </div>
+                            </div>
                     <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
                 </div>
-            </article>
+            </article> -->
         </section>
     </section>
     <div class="menu_container">
@@ -197,6 +467,111 @@
                 opacity: 0,
                 zIndex: -1
             })
+        const element_menu_float = document.querySelectorAll(".element_menu_float")
+        const button_plus_look = document.querySelector(".button_plus_look")
+        const button_minus_look = document.querySelector(".button_minus_look")
+        button_plus_look.addEventListener("click", () => {
+            button_plus_look.classList.add("hide_button")
+            button_minus_look.classList.remove("hide_button")
+            for (let i = 0; i < element_menu_float.length; i++) {
+                element_menu_float[i].classList.add("show_navigation")
+            }
+        })
+        button_minus_look.addEventListener("click", () => {
+            button_minus_look.classList.add("hide_button")
+            button_plus_look.classList.remove("hide_button")
+            for (let i = 0; i < element_menu_float.length; i++) {
+                element_menu_float[i].classList.remove("show_navigation")
+            }
+        })
+        const poser_question = document.querySelector(".poser_question")
+        const modal_poser_question = document.querySelector(".modal_poser_question")
+        const form_modal_poser_question = document.querySelector(".modal_poser_question form")
+
+        poser_question.addEventListener("click", (e) => {
+            e.preventDefault()
+            modal_poser_question.classList.add("show_modal")
+        })
+        form_modal_poser_question.addEventListener("click", (e) => {
+            e.stopPropagation()
+        })
+        modal_poser_question.addEventListener("click", (e) => {
+            modal_poser_question.classList.remove("show_modal")
+        })
+
+        const header_search = document.querySelector(".header_search")
+        const modal_recherche = document.querySelector(".modal_recherche")
+        const form_modal_recherche = document.querySelector(".modal_recherche form")
+
+        header_search.addEventListener("click", (e) => {
+            e.preventDefault()
+            modal_recherche.classList.add("show_modal")
+        })
+        form_modal_recherche.addEventListener("click", (e) => {
+            e.stopPropagation()
+        })
+        modal_recherche.addEventListener("click", (e) => {
+            modal_recherche.classList.remove("show_modal")
+        })
+
+        const alert_notification = document.querySelector(".alert_notification")
+        const modal_notification = document.querySelector(".modal_notification")
+        const div_modal_recherche = document.querySelector(".modal_notification ul")
+
+        alert_notification.addEventListener("click", (e) => {
+            e.preventDefault()
+            modal_notification.classList.add("show_modal")
+        })
+        div_modal_recherche.addEventListener("click", (e) => {
+            e.stopPropagation()
+        })
+        modal_notification.addEventListener("click", (e) => {
+            modal_notification.classList.remove("show_modal")
+        })
+
+        const deconnexion = document.querySelector(".deconnexion")
+        const form_modal_deconnexion = document.querySelector(".modal_deconnexion form")
+        const modal_deconnexion = document.querySelector(".modal_deconnexion")
+
+        deconnexion.addEventListener("click", (e) => {
+            e.preventDefault()
+            modal_deconnexion.classList.add("show_modal")
+        })
+        form_modal_deconnexion.addEventListener("click", (e) => {
+            e.stopPropagation()
+        })
+        modal_deconnexion.addEventListener("click", (e) => {
+            modal_deconnexion.classList.remove("show_modal")
+        })
+
+        const list_modal_notification_item = document.querySelectorAll(".list_modal_notification_item")
+        const modal_message_right = document.querySelector(".modal_message_right")
+
+        list_modal_notification_item.forEach(function (element) {
+            element.addEventListener("click", (e) => {
+                e.preventDefault()
+                modal_message_right.classList.add("show_modal")
+                const close_box_message = modal_message_right.querySelector(".close_box_message")
+                close_box_message.addEventListener('click', () => {
+                    modal_message_right.classList.remove("show_modal")
+                })
+            })
+        })
+
+        const modal_feuille_route = document.querySelector(".modal_feuille_route")
+        const form_modal_feuille_route = document.querySelector(".modal_feuille_route form")
+        const start_feuille_route = document.querySelector(".start_feuille_route")
+
+        start_feuille_route.addEventListener("click", (e) => {
+            e.preventDefault()
+            modal_feuille_route.classList.add("show_modal")
+        })
+        form_modal_feuille_route.addEventListener("click", (e) => {
+            e.stopPropagation()
+        })
+        modal_feuille_route.addEventListener("click", (e) => {
+            modal_feuille_route.classList.remove("show_modal")
+        })
     </script>
 </body>
 

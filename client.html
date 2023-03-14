@@ -21,14 +21,23 @@
         <div class="circle_big_primary"></div>
     </div>
     <header class="header header_profil" id="header">
-        <nav class="navigation">
+        <nav class="navigation navigation_only">
             <div class="navigation_item">
-                <span class="theme" title="Cliquez pour modifier le thème d'affichage"><em
-                        class="bx bx-moon bx-sm"></em></span>
-                <span class="header_search" title="Cliquez pour effectuer une recherche"><em
-                        class="bx bx-search-alt bx-sm"></em></span>
-                <span class="alert_notification" title="Cliquez pour voir vos notifications"><em
-                        class="bx bx-bell bx-sm"></em></span>
+                <div class="navigation_element">
+                    <a href="" class="navigation_item_element compte_client_actif"><img src="img/photo.jpg" alt=""
+                            srcset=""></a>
+                    <span class="theme element_menu_float navigation_item_element"
+                        title="Cliquez pour modifier le thème d'affichage"><em class="bx bx-moon bx-sm"></em></span>
+                    <span class="header_search element_menu_float navigation_item_element"
+                        title="Cliquez pour effectuer une recherche"><em class="bx bx-search-alt bx-sm"></em></span>
+                    <span class="alert_notification element_menu_float navigation_item_element"
+                        title="Cliquez pour voir vos notifications"><em class="bx bx-bell bx-sm"></em></span>
+                    <span class="deconnexion element_menu_float navigation_item_element"
+                        title="Cliquez ici pour vous déconnecter"><em class="bx bx-log-out bx-sm"></em></span>
+                    <span class="navigation_item_element" title="Cliquez pour voir plus"><em
+                            class="bx bx-chevron-down button_plus_look"></em><em
+                            class="bx bx-chevron-up button_minus_look hide_button"></em></span>
+                </div>
                 <div class="logo"><img src="img/canadink.png" alt="" srcset=""></div>
                 <button type="button" class="menu" id="menu"><em class="bx bx-menu-alt-right"></em></button>
             </div>
@@ -173,10 +182,15 @@
         </aside>
         <section class="favoris">
             <form action="" method="post" class="search_favoris">
-                <input type="search" name="" id="" placeholder="Rechercher des vidéos...">
+                <input type="search" name="" id="" placeholder="Rechercher ici...">
                 <em class="bx bx-search"></em>
             </form>
-            <div class="favoris_grid_client">
+            <div class="favoris_filter">
+                <button type="button" class="button_feuille_de_route_list"><em class="bx bxs-file"></em> Feuilles de route</button>
+                <button type="button" class="button_favoris_list active_button_favoris"><em
+                        class="bx bxs-pin"></em>Videos épinglées</button>
+            </div>
+            <div class="favoris_grid grid_item_list active_grid_item">
                 <div class="video_favoris_container">
                     <div class="video_favoris"><img src="img/photo_2.jpg" alt="" srcset=""></div>
                     <a href="" class="link_video_favoris"><em class="bx bx-play"></em></a>
@@ -226,6 +240,83 @@
                     <a href="" class="link_video_favoris"><em class="bx bx-play"></em></a>
                 </div>
             </div>
+            <div class="feuille_de_route_grid grid_item_list feuille_route_contain">
+                <form action="" method="post" class="form_feuille_route">
+                    <ul class="list_modal_feuille_route">
+                        <div class="title_feuille_route">Obtenir un passeport</div>
+                        <li>
+                            <input type="checkbox" id="canada_school">
+                            <label for="canada_school">Obtenir un passeport</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_work">
+                            <label for="canada_work">Obtenir un passeport</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_immigration">
+                            <label for="canada_immigration">Obtenir un passeport</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_visite">
+                            <label for="canada_visite">Obtenir un passeport</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_investi">
+                            <label for="canada_investi">Obtenir un passeport</label>
+                        </li>
+                    </ul>
+                </form>
+                <form action="" method="post" class="form_feuille_route">
+                    <ul class="list_modal_feuille_route">
+                        <div class="title_feuille_route">Etudier au Canada</div>
+                        <li>
+                            <input type="checkbox" id="canada_school">
+                            <label for="canada_school">Etudier au Canada</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_work">
+                            <label for="canada_work">Travailler au Canada</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_immigration">
+                            <label for="canada_immigration">Immigrer au Canada</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_visite">
+                            <label for="canada_visite">Visiter le Canada</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_investi">
+                            <label for="canada_investi">Investir au Canada</label>
+                        </li>
+                    </ul>
+                </form>
+                <form action="" method="post" class="form_feuille_route">
+                    <ul class="list_modal_feuille_route">
+                        <div class="title_feuille_route">Travailler au Canada</div>
+                        <li>
+                            <input type="checkbox" id="canada_school">
+                            <label for="canada_school">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut facilis quas aliquam, tempore quibusdam veniam vel nesciunt odio voluptatem, expedita repudianrit unde adipisci veritatis quae.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_work">
+                            <label for="canada_work">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo reprehenderit dolorem ullam eum architecto, earum minus beatae pariatur, vero quis voluptates fugit, ea quod consectetur facere rem repudiandae perferendis.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_immigration">
+                            <label for="canada_immigration">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolor facere tempora in qui? Doloremque exercitationem ipsum architecto provident perspiciatis fugiat quod et unde impedit qui, quasi beatae!</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_visite">
+                            <label for="canada_visite">Lorem ipsum dolor sit reprehenderit libero corporis doloremque rerum, minus mollitia est cum suscipit iure esse possimus, doloribus impedit adipisci dolorum ullam. Cumque, voluptates esse?</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_investi">
+                            <label for="canada_investi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perspiciatis ipsum, quasi quaerat mollitia hic commodi, omnis consectetur, illum iciatis tempore quos sint sequi!</label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
         </section>
         <aside class="evenement">
             <article class="evenement_item">
@@ -254,28 +345,6 @@
             </article>
         </aside>
     </section>
-    <footer class="footer footer_page" id="footer">
-        <!-- <form action="" method="post" class="form_newsletter">
-            <h3 class="newsletter">Inscrivez - vous à notre Newsletter pour ne rien râter des actualités sur
-                l'immigration au canada</h3>
-            <input type="email" name="" id="" class="newsletter_input" placeholder="Votre adresse mail">
-            <button type="submit" class="newsletter_button">S'inscrire</button>
-        </form> -->
-        <div class="social_footer">
-            <div class="copyright">
-                <em class="bx bx-copyright"></em>
-                <span> Canadink Tous droits reservés
-                    <div class="social_footer_link">
-                        <a href="" class="bx bxl-facebook"></a>
-                        <a href="" class="bx bxl-twitter"></a>
-                        <a href="" class="bx bxl-whatsapp"></a>
-                        | <em class="bx bx-map"></em>Canada, Ottawa
-                </span>
-            </div>
-        </div>
-        <span class="design_by">Design by K2Senpaï</span>
-        </div>
-    </footer>
     <div class="menu_container">
         <div class="menu_image_container">
             <div class="menu_image menu_image_visible"><img src="img/photo_2.jpg" alt="" srcset=""></div>
@@ -303,10 +372,11 @@
     </div>
     <div id="cursor"></div>
     <script src="js/jquery.js"></script>
-    <script src="slick/slick.min.js"></script>
+    <!-- <script src="slick/slick/slick.min.js"></script> -->
     <script src="js/splitmin.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/client_consultant.js"></script>
     <script>
         const my_text = new SplitType("#my_text")
         const element = document.querySelectorAll(".page_preload_text div")
