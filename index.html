@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/gsap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Accueil</title>
@@ -25,16 +28,27 @@
     <header class="header" id="header">
         <nav class="navigation">
             <div class="navigation_item">
-                <span class="theme navigation_item_element" title="Cliquez pour modifier le thème d'affichage"><em
-                        class="bx bx-moon bx-sm"></em></span>
-                <span class="header_search navigation_item_element" title="Cliquez pour effectuer une recherche"><em
-                        class="bx bx-search-alt bx-sm"></em></span>
-                <span class="alert_notification navigation_item_element" title="Cliquez pour voir vos notifications"><em
-                        class="bx bx-bell bx-sm"></em></span>
+                <div class="navigation_element">
+                    <a href="" class="navigation_item_element compte_client_actif"><img src="img/photo.jpg" alt=""
+                            srcset=""></a>
+                    <span class="theme element_menu_float navigation_item_element"
+                        title="Cliquez pour modifier le thème d'affichage"><em class="bx bx-moon bx-sm"></em></span>
+                    <span class="header_search element_menu_float navigation_item_element"
+                        title="Cliquez pour effectuer une recherche"><em class="bx bx-search-alt bx-sm"></em></span>
+                    <span class="alert_notification element_menu_float navigation_item_element"
+                        title="Cliquez pour voir vos notifications"><em class="bx bx-bell bx-sm"></em></span>
+                    <span class="deconnexion element_menu_float navigation_item_element"
+                        title="Cliquez ici pour vous déconnecter"><em class="bx bx-log-out bx-sm"></em></span>
+                    <span class="navigation_item_element" title="Cliquez pour voir plus"><em
+                            class="bx bx-chevron-down button_plus_look"></em><em
+                            class="bx bx-chevron-up button_minus_look hide_button"></em></span>
+                </div>
                 <div class="logo"><img src="img/canadink.png" alt="" srcset=""></div>
                 <button type="button" class="menu" id="menu"><em class="bx bx-menu-alt-right"></em></button>
             </div>
         </nav>
+    </header>
+    <div class="header_section_presentation">
         <div class="title_header_container">
             <h3 class="title_header">
                 <div class="red">La bonne</div>
@@ -54,8 +68,8 @@
             <div class="image_canad_item"><img src="img/photo_6.jpg" alt="" srcset=""></div>
             <a href="" class="video_canad_item"><video muted src="img/video_jour.mp4"></video></a>
         </div>
-        <div class="scroll_indicator"><em class="bx bx-chevron-down bx-md bx-fade-down"></em></div>
-    </header>
+    </div>
+    <div class="scroll_indicator"><em class="bx bx-chevron-down bx-md bx-fade-down"></em></div>
     <section class="wrapper_general">
         <section class="most_look">
             <article class="col_1">
@@ -177,494 +191,500 @@
                 </ul>
             </aside>
         </section>
-        <h3 class="tuto_section_intro">Nos <br> tutoriels <div class="fleche_down"></div>
-            <div class="fleche"></div>
+        <h3 class="tuto_section_intro">Nos <br> tutoriels
         </h3>
-        <section class="categorie_1 categorie_container">
-            <h2 class="categorie_1_title">Etudier au Canada <a href="https://k2senpai.github.io/categorie.html">Voir plus</a></h2>
-            <div class="categorie_1_grid categorie_container_item">
-                <article class="col_1">
-                    <div class="col_1_grid_flex">
-                        <a href="" class="video_item"><video muted src="img/video_3.mp4" class="hide_video"></video><img
-                                src="img/photo_4.jpg" alt="" srcset=""></a>
-                        <div class="col_1_right">
-                            <div class="video_item_info">
-                                <span class="date_video_item">12 Juillet 2023</span>
-                            </div>
-                            <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
-                            <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit.
-                                Vero
-                                temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
-                                Nihil
-                                dignissimos temporibus repudiandae, inventore pariatur numquam temporibus
-                                repudiandae,
-                                inventore pariatur numquam ...</p>
-                            <div class="info_video_item_user_post">
-                                <div class="user_post"><img src="img/photo.jpg" alt="" srcset=""></div>
-                                <span class="user_post_name">Cameron Williamson</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col_1_grid_flex">
-                        <div class="col_1_left">
-                            <a href="" class="video_item"><video muted src="img/video_20.mp4" muted
-                                    class="hide_video"></video><img src="img/photo_3.jpg" alt="" srcset=""></a>
-                            <div class="video_item_info">
-                                <span class="date_video_item">12 Juillet 2023</span>
-                            </div>
-                            <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
-                            <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit.
-                                Vero
-                                temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
-                                Nihil
-                                dignissimos</p>
-                            <hr>
-                            <a href="" class="theme_most_consulte_text">
-                                7 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </div>
-                        <div class="col_1_bottom_right">
-                            <a href="" class="video_item"><video muted src="img/video_18.mp4" muted
-                                    class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
-                            <div class="video_item_info">
-                                <span class="date_video_item">12 Juillet 2023</span>
-                            </div>
-                            <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
-                            <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit. Vero
-                                temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
-                                Nihil
-                                tempore
-                                dignissimos</p>
-                        </div>
-                    </div>
-                </article>
-                <aside class="theme_most_consulte">
-                    <ul>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                <span>6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                <span>6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                <span> 6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                <span>6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                <span>7 Easy Steps To Create Your Own Cute Merch For Instagram</span>
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
-            </div>
-        </section>
-        <section class="categorie_2 categorie_container">
-            <h2 class="categorie_1_title">Travailler au Canada <a href="">Voir plus</a></h2>
-            <div class="categorie_2_grid categorie_container_item">
-                <aside class="theme_most_consulte">
-                    <ul>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                <span>6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                6 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                6 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                6 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                7 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
-                <article class="col_2">
-                    <div class="col_2_grid_flex">
-                        <a href="" class="video_item"><video muted src="img/video_3.mp4" class="hide_video"></video><img
-                                src="img/photo_4.jpg" alt="" srcset=""></a>
-                        <div class="col_1_right">
-                            <div class="video_item_info">
-                                <span class="date_video_item">12 Juillet 2023</span>
-                            </div>
-                            <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
-                            <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit. numquam temporibus repudiandae,
-                                numquam temporibus repudiandae,
-                                inventore pariatur numquam ...</p>
-                            <div class="info_video_item_user_post">
-                                <div class="user_post"><img src="img/photo.jpg" alt="" srcset=""></div>
-                                <span class="user_post_name">Cameron Williamson</span>
+        <div class="grid_conatainer_categorie_generale">
+            <section class="categorie_1 categorie_container">
+                <h2 class="categorie_1_title">Etudier au Canada <a href="">Voir plus</a></h2>
+                <div class="categorie_1_grid categorie_container_item page_index">
+                    <article class="col_1">
+                        <div class="col_1_grid_flex">
+                            <a href="" class="video_item"><video muted src="img/video_3.mp4"
+                                    class="hide_video"></video><img src="img/photo_4.jpg" alt="" srcset=""></a>
+                            <div class="col_1_right">
+                                <div class="video_item_info">
+                                    <span class="date_video_item">12 Juillet 2023</span>
+                                </div>
+                                <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
+                                <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit.
+                                    Vero
+                                    temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
+                                    Nihil
+                                    dignissimos temporibus repudiandae, inventore pariatur numquam temporibus
+                                    repudiandae,
+                                    inventore pariatur numquam ...</p>
+                                <div class="info_video_item_user_post">
+                                    <div class="user_post"><img src="img/photo.jpg" alt="" srcset=""></div>
+                                    <span class="user_post_name">Cameron Williamson</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col_2_grid_flex">
-                        <div class="col_1_left">
-                            <a href="" class="video_item"><video muted src="img/video_20.mp4" muted
-                                    class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
-                            <div class="video_item_info">
-                                <span class="date_video_item">12 Juillet 2023</span>
+                        <div class="col_1_grid_flex">
+                            <div class="col_1_left">
+                                <a href="" class="video_item"><video muted src="img/video_20.mp4" muted
+                                        class="hide_video"></video><img src="img/photo_3.jpg" alt="" srcset=""></a>
+                                <div class="video_item_info">
+                                    <span class="date_video_item">12 Juillet 2023</span>
+                                </div>
+                                <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
+                                <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit.
+                                    Vero
+                                    temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
+                                    Nihil
+                                    dignissimos</p>
+                                <hr>
+                                <a href="" class="theme_most_consulte_text">
+                                    7 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
                             </div>
-                            <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
-                            <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit.
-                                Vero
-                                temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil
-                                dignissimos</p>
-                            <hr>
-                            <a href="" class="theme_most_consulte_text">
-                                7 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </div>
-                        <div class="col_1_bottom_right">
-                            <a href="" class="video_item"><video muted src="img/video_18.mp4" muted
-                                    class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
-                            <div class="video_item_info">
-                                <span class="date_video_item">12 Juillet 2023</span>
+                            <div class="col_1_bottom_right">
+                                <a href="" class="video_item"><video muted src="img/video_18.mp4" muted
+                                        class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
+                                <div class="video_item_info">
+                                    <span class="date_video_item">12 Juillet 2023</span>
+                                </div>
+                                <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
+                                <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Vero
+                                    temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
+                                    Nihil
+                                    tempore
+                                    dignissimos</p>
                             </div>
-                            <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
-                            <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit. Vero
-                                temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil
-                                tempore
-                                dignissimos</p>
                         </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <section class="categorie_4_wrapper categorie_container">
-            <h2 class="categorie_1_title">Immigrer au Canada <a href="">Voir plus</a></h2>
-            <section class="categorie_4 categorie_container_item">
-                <article class="col_1">
-                    <a href="" class="video_item"><video muted src="img/video_20.mp4" muted
-                            class="hide_video"></video><img src="img/photo_3.jpg" alt="" srcset=""></a>
-                    <div class="video_item_info">
-                        <span class="date_video_item">12 Juillet 2023</span>
-                    </div>
-                    <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
-                    <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                        temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil tempore
-                        odit ab minus eveniet praesentium, similique blanditiis molestiae ut saepe perspiciatis officia
-                        nemo, eos quae cumque. Accusamus fugiat architecto rerum animi atque eveniet, quo, praesentium
-                        dignissimos</p>
-                    <div class="info_video_item_user_post">
-                        <div class="user_post"><img src="img/photo.jpg" alt="" srcset=""></div>
-                        <span class="user_post_name">Cameron Williamson</span>
-                    </div>
-                </article>
-                <article class="col_2" style="border-right: none;">
-                    <div class="col_2_item">
-                        <a href="" class="video_item"><video muted src="img/video_11.mp4" muted
-                                class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
-                        <div class="video_item_info">
-                            <span class="date_video_item">12 Juillet 2023</span>
+                    </article>
+                    <aside class="theme_most_consulte">
+                        <ul>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    <span>6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    <span>6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    <span> 6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    <span>6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    <span>7 Easy Steps To Create Your Own Cute Merch For Instagram</span>
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+            <section class="categorie_2 categorie_container">
+                <h2 class="categorie_1_title">Travailler au Canada <a href="categorie.html">Voir plus</a></h2>
+                <div class="categorie_2_grid categorie_container_item page_index">
+                    <aside class="theme_most_consulte">
+                        <ul>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    <span>6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    6 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    6 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    6 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    7 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <article class="col_2">
+                        <div class="col_2_grid_flex">
+                            <a href="" class="video_item"><video muted src="img/video_3.mp4"
+                                    class="hide_video"></video><img src="img/photo_4.jpg" alt="" srcset=""></a>
+                            <div class="col_1_right">
+                                <div class="video_item_info">
+                                    <span class="date_video_item">12 Juillet 2023</span>
+                                </div>
+                                <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
+                                <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. numquam temporibus repudiandae,
+                                    numquam temporibus repudiandae,
+                                    inventore pariatur numquam ...</p>
+                                <div class="info_video_item_user_post">
+                                    <div class="user_post"><img src="img/photo.jpg" alt="" srcset=""></div>
+                                    <span class="user_post_name">Cameron Williamson</span>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
-                    </div>
-                    <div class="col_2_item">
-                        <a href="" class="video_item"><video muted src="img/video_21.mp4" muted
-                                class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
-                        <div class="video_item_info">
-                            <span class="date_video_item">12 Juillet 2023</span>
+                        <div class="col_2_grid_flex">
+                            <div class="col_1_left">
+                                <a href="" class="video_item"><video muted src="img/video_20.mp4" muted
+                                        class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
+                                <div class="video_item_info">
+                                    <span class="date_video_item">12 Juillet 2023</span>
+                                </div>
+                                <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
+                                <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit.
+                                    Vero
+                                    temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
+                                    Nihil
+                                    dignissimos</p>
+                                <hr>
+                                <a href="" class="theme_most_consulte_text">
+                                    7 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </div>
+                            <div class="col_1_bottom_right">
+                                <a href="" class="video_item"><video muted src="img/video_18.mp4" muted
+                                        class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
+                                <div class="video_item_info">
+                                    <span class="date_video_item">12 Juillet 2023</span>
+                                </div>
+                                <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
+                                <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Vero
+                                    temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
+                                    Nihil
+                                    tempore
+                                    dignissimos</p>
+                            </div>
                         </div>
-                        <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
-                    </div>
-                    <div class="col_2_item">
-                        <a href="" class="video_item"><video muted src="img/video_13.mp4" muted
-                                class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
-                        <div class="video_item_info">
-                            <span class="date_video_item">12 Juillet 2023</span>
-                        </div>
-                        <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
-                    </div>
-                </article>
-                <article class="col_3">
-                    <div class="col_2_item">
-                        <a href="" class="video_item"><video muted src="img/video_15.mp4" muted
-                                class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
-                        <div class="video_item_info">
-                            <span class="date_video_item">12 Juillet 2023</span>
-                        </div>
-                        <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
-                    </div>
-                    <div class="col_2_item">
-                        <a href="" class="video_item"><video muted src="img/video_18.mp4" muted
-                                class="hide_video"></video><img src="img/photo_6.jpg" alt="" srcset=""></a>
-                        <div class="video_item_info">
-                            <span class="date_video_item">12 Juillet 2023</span>
-                        </div>
-                        <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
-                    </div>
-                    <div class="col_2_item">
-                        <a href="" class="video_item"><video muted src="img/video_2.mp4" muted
+                    </article>
+                </div>
+            </section>
+            <section class="categorie_4_wrapper categorie_container">
+                <h2 class="categorie_1_title">Immigrer au Canada <a href="">Voir plus</a></h2>
+                <section class="categorie_4 categorie_container_item page_index">
+                    <article class="col_1">
+                        <a href="" class="video_item"><video muted src="img/video_20.mp4" muted
                                 class="hide_video"></video><img src="img/photo_3.jpg" alt="" srcset=""></a>
                         <div class="video_item_info">
                             <span class="date_video_item">12 Juillet 2023</span>
                         </div>
-                        <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
-                    </div>
-                </article>
-                <article class="col_3">
-                    <div class="col_2_item">
-                        <a href="" class="video_item"><video muted src="img/video_12.mp4" muted
-                                class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
-                        <div class="video_item_info">
-                            <span class="date_video_item">12 Juillet 2023</span>
+                        <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
+                        <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Vero
+                            temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil
+                            tempore
+                            odit ab minus eveniet praesentium, similique blanditiis molestiae ut saepe perspiciatis
+                            officia
+                            nemo, eos quae cumque. Accusamus fugiat architecto rerum animi atque eveniet, quo,
+                            praesentium
+                            dignissimos</p>
+                        <div class="info_video_item_user_post">
+                            <div class="user_post"><img src="img/photo.jpg" alt="" srcset=""></div>
+                            <span class="user_post_name">Cameron Williamson</span>
                         </div>
-                        <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
-                    </div>
-                    <div class="col_2_item">
-                        <a href="" class="video_item"><video muted src="img/video_23.mp4" muted
-                                class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
-                        <div class="video_item_info">
-                            <span class="date_video_item">12 Juillet 2023</span>
-                        </div>
-                        <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
-                    </div>
-                    <div class="col_2_item">
-                        <a href="" class="video_item"><video muted src="img/video_21.mp4" muted
-                                class="hide_video"></video><img src="img/photo_4.jpg" alt="" srcset=""></a>
-                        <div class="video_item_info">
-                            <span class="date_video_item">12 Juillet 2023</span>
-                        </div>
-                        <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
-                    </div>
-                </article>
-            </section>
-        </section>
-        <section class="categorie_1 categorie_container">
-            <h2 class="categorie_1_title">Visiter le Canada <a href="">Voir plus</a></h2>
-            <div class="categorie_1_grid categorie_container_item">
-                <article class="col_1">
-                    <div class="col_1_grid_flex">
-                        <a href="" class="video_item"><video muted src="img/video_3.mp4" class="hide_video"></video><img
-                                src="img/photo_7.jpg" alt="" srcset=""></a>
-                        <div class="col_1_right">
+                    </article>
+                    <article class="col_2" style="border-right: none;">
+                        <div class="col_2_item">
+                            <a href="" class="video_item"><video muted src="img/video_11.mp4" muted
+                                    class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
                             <div class="video_item_info">
                                 <span class="date_video_item">12 Juillet 2023</span>
                             </div>
-                            <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
-                            <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit.
-                                Vero
-                                temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
-                                Nihil
-                                dignissimos temporibus repudiandae, inventore pariatur numquam temporibus
-                                repudiandae,
-                                inventore pariatur numquam ...</p>
-                            <div class="info_video_item_user_post">
-                                <div class="user_post"><img src="img/photo.jpg" alt="" srcset=""></div>
-                                <span class="user_post_name">Cameron Williamson</span>
-                            </div>
+                            <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
                         </div>
-                    </div>
-                    <div class="col_1_grid_flex">
-                        <div class="col_1_left">
-                            <a href="" class="video_item"><video muted src="img/video_20.mp4" muted
+                        <div class="col_2_item">
+                            <a href="" class="video_item"><video muted src="img/video_21.mp4" muted
                                     class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
                             <div class="video_item_info">
                                 <span class="date_video_item">12 Juillet 2023</span>
                             </div>
-                            <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
-                            <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit.
-                                Vero
-                                temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
-                                Nihil
-                                dignissimos</p>
-                            <hr>
-                            <a href="" class="theme_most_consulte_text">
-                                7 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
+                            <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
                         </div>
-                        <div class="col_1_bottom_right">
+                        <div class="col_2_item">
+                            <a href="" class="video_item"><video muted src="img/video_13.mp4" muted
+                                    class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
+                            <div class="video_item_info">
+                                <span class="date_video_item">12 Juillet 2023</span>
+                            </div>
+                            <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
+                        </div>
+                    </article>
+                    <article class="col_3">
+                        <div class="col_2_item">
+                            <a href="" class="video_item"><video muted src="img/video_15.mp4" muted
+                                    class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
+                            <div class="video_item_info">
+                                <span class="date_video_item">12 Juillet 2023</span>
+                            </div>
+                            <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
+                        </div>
+                        <div class="col_2_item">
                             <a href="" class="video_item"><video muted src="img/video_18.mp4" muted
-                                    class="hide_video"></video><img src="img/photo_5.jpg" alt="" srcset=""></a>
-                            <div class="video_item_info">
-                                <span class="date_video_item">12 Juillet 2023</span>
-                            </div>
-                            <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
-                            <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit. Vero
-                                temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
-                                Nihil
-                                tempore
-                                dignissimos</p>
-                        </div>
-                    </div>
-                </article>
-                <aside class="theme_most_consulte">
-                    <ul>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                <span>6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                6 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                6 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                6 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                7 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
-            </div>
-        </section>
-        <section class="categorie_2 categorie_container">
-            <h2 class="categorie_1_title">Investir au Canada <a href="">Voir plus</a></h2>
-            <div class="categorie_2_grid categorie_container_item">
-                <aside class="theme_most_consulte">
-                    <ul>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                <span>6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                6 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                6 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                6 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="theme_most_consulte_text">
-                                7 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
-                <article class="col_2">
-                    <div class="col_2_grid_flex">
-                        <a href="" class="video_item"><video muted src="img/video_3.mp4" class="hide_video"></video><img
-                                src="img/photo_7.jpg" alt="" srcset=""></a>
-                        <div class="col_1_right">
-                            <div class="video_item_info">
-                                <span class="date_video_item">12 Juillet 2023</span>
-                            </div>
-                            <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
-                            <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit. numquam temporibus repudiandae,
-                                numquam temporibus repudiandae,
-                                inventore pariatur numquam ...</p>
-                            <div class="info_video_item_user_post">
-                                <div class="user_post"><img src="img/photo.jpg" alt="" srcset=""></div>
-                                <span class="user_post_name">Cameron Williamson</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col_2_grid_flex">
-                        <div class="col_1_left">
-                            <a href="" class="video_item"><video muted src="img/video_20.mp4" muted
                                     class="hide_video"></video><img src="img/photo_6.jpg" alt="" srcset=""></a>
                             <div class="video_item_info">
                                 <span class="date_video_item">12 Juillet 2023</span>
                             </div>
-                            <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
-                            <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit.
-                                Vero
-                                temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil
-                                dignissimos</p>
-                            <hr>
-                            <a href="" class="theme_most_consulte_text">
-                                7 Easy Steps To Create Your Own Cute Merch For Instagram
-                                <span class="author">Jane cooper</span>
-                            </a>
+                            <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
                         </div>
-                        <div class="col_1_bottom_right">
-                            <a href="" class="video_item"><video muted src="img/video_18.mp4" muted
+                        <div class="col_2_item">
+                            <a href="" class="video_item"><video muted src="img/video_2.mp4" muted
                                     class="hide_video"></video><img src="img/photo_3.jpg" alt="" srcset=""></a>
                             <div class="video_item_info">
                                 <span class="date_video_item">12 Juillet 2023</span>
                             </div>
-                            <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
-                            <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit. Vero
-                                temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil
-                                tempore
-                                dignissimos</p>
+                            <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
                         </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <h3 class="faq">
-            <div class="fleche_down_left">
-                <div class="fleche_down_left_pointer"></div>
-            </div> Faq
-        </h3>
+                    </article>
+                    <article class="col_3">
+                        <div class="col_2_item">
+                            <a href="" class="video_item"><video muted src="img/video_12.mp4" muted
+                                    class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
+                            <div class="video_item_info">
+                                <span class="date_video_item">12 Juillet 2023</span>
+                            </div>
+                            <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
+                        </div>
+                        <div class="col_2_item">
+                            <a href="" class="video_item"><video muted src="img/video_23.mp4" muted
+                                    class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
+                            <div class="video_item_info">
+                                <span class="date_video_item">12 Juillet 2023</span>
+                            </div>
+                            <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
+                        </div>
+                        <div class="col_2_item">
+                            <a href="" class="video_item"><video muted src="img/video_21.mp4" muted
+                                    class="hide_video"></video><img src="img/photo_4.jpg" alt="" srcset=""></a>
+                            <div class="video_item_info">
+                                <span class="date_video_item">12 Juillet 2023</span>
+                            </div>
+                            <h3 class="video_item_title"> Let’s Get Back to Work, New York</h3>
+                        </div>
+                    </article>
+                </section>
+            </section>
+            <section class="categorie_1 categorie_container">
+                <h2 class="categorie_1_title">Visiter le Canada <a href="">Voir plus</a></h2>
+                <div class="categorie_1_grid categorie_container_item page_index">
+                    <article class="col_1">
+                        <div class="col_1_grid_flex">
+                            <a href="" class="video_item"><video muted src="img/video_3.mp4"
+                                    class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
+                            <div class="col_1_right">
+                                <div class="video_item_info">
+                                    <span class="date_video_item">12 Juillet 2023</span>
+                                </div>
+                                <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
+                                <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit.
+                                    Vero
+                                    temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
+                                    Nihil
+                                    dignissimos temporibus repudiandae, inventore pariatur numquam temporibus
+                                    repudiandae,
+                                    inventore pariatur numquam ...</p>
+                                <div class="info_video_item_user_post">
+                                    <div class="user_post"><img src="img/photo.jpg" alt="" srcset=""></div>
+                                    <span class="user_post_name">Cameron Williamson</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_1_grid_flex">
+                            <div class="col_1_left">
+                                <a href="" class="video_item"><video muted src="img/video_20.mp4" muted
+                                        class="hide_video"></video><img src="img/photo_2.jpg" alt="" srcset=""></a>
+                                <div class="video_item_info">
+                                    <span class="date_video_item">12 Juillet 2023</span>
+                                </div>
+                                <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
+                                <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit.
+                                    Vero
+                                    temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
+                                    Nihil
+                                    dignissimos</p>
+                                <hr>
+                                <a href="" class="theme_most_consulte_text">
+                                    7 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </div>
+                            <div class="col_1_bottom_right">
+                                <a href="" class="video_item"><video muted src="img/video_18.mp4" muted
+                                        class="hide_video"></video><img src="img/photo_5.jpg" alt="" srcset=""></a>
+                                <div class="video_item_info">
+                                    <span class="date_video_item">12 Juillet 2023</span>
+                                </div>
+                                <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
+                                <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Vero
+                                    temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
+                                    Nihil
+                                    tempore
+                                    dignissimos</p>
+                            </div>
+                        </div>
+                    </article>
+                    <aside class="theme_most_consulte">
+                        <ul>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    <span>6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    6 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    6 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    6 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    7 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+            <section class="categorie_2 categorie_container">
+                <h2 class="categorie_1_title">Investir au Canada <a href="">Voir plus</a></h2>
+                <div class="categorie_2_grid categorie_container_item page_index">
+                    <aside class="theme_most_consulte">
+                        <ul>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    <span>6 Easy Steps To Create Your Own Cute Merch For Instagram</span>
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    6 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    6 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    6 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="theme_most_consulte_text">
+                                    7 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <article class="col_2">
+                        <div class="col_2_grid_flex">
+                            <a href="" class="video_item"><video muted src="img/video_3.mp4"
+                                    class="hide_video"></video><img src="img/photo_7.jpg" alt="" srcset=""></a>
+                            <div class="col_1_right">
+                                <div class="video_item_info">
+                                    <span class="date_video_item">12 Juillet 2023</span>
+                                </div>
+                                <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
+                                <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. numquam temporibus repudiandae,
+                                    numquam temporibus repudiandae,
+                                    inventore pariatur numquam ...</p>
+                                <div class="info_video_item_user_post">
+                                    <div class="user_post"><img src="img/photo.jpg" alt="" srcset=""></div>
+                                    <span class="user_post_name">Cameron Williamson</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_2_grid_flex">
+                            <div class="col_1_left">
+                                <a href="" class="video_item"><video muted src="img/video_20.mp4" muted
+                                        class="hide_video"></video><img src="img/photo_6.jpg" alt="" srcset=""></a>
+                                <div class="video_item_info">
+                                    <span class="date_video_item">12 Juillet 2023</span>
+                                </div>
+                                <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
+                                <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit.
+                                    Vero
+                                    temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
+                                    Nihil
+                                    dignissimos</p>
+                                <hr>
+                                <a href="" class="theme_most_consulte_text">
+                                    7 Easy Steps To Create Your Own Cute Merch For Instagram
+                                    <span class="author">Jane cooper</span>
+                                </a>
+                            </div>
+                            <div class="col_1_bottom_right">
+                                <a href="" class="video_item"><video muted src="img/video_18.mp4" muted
+                                        class="hide_video"></video><img src="img/photo_3.jpg" alt="" srcset=""></a>
+                                <div class="video_item_info">
+                                    <span class="date_video_item">12 Juillet 2023</span>
+                                </div>
+                                <h3 class="video_item_title"> Work From Home Part-Time Jobs You Can Do Now</h3>
+                                <p class="video_item_content_resume">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Vero
+                                    temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem?
+                                    Nihil
+                                    tempore
+                                    dignissimos</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <h3 class="faq">Faq</h3>
         <section class="faq_container">
             <article class="faq_container_item">
                 <h4 class="faq_container_item_title">Comment s'inscrire sur Canadink <em
@@ -695,6 +715,85 @@
                     illo, quam dolor quia rerum ab similique fugiat sequi.</p>
             </article>
         </section>
+        <section class="commentaire">
+            <h3>Ils sont passés par ici, ils en parle</h3>
+            <div class="commentaire_grid_container">
+                <section class="commentaire_grid_item">
+                    <div class="image_commentaire_grid"><img src="img/photo.jpg" alt="" srcset=""></div>
+                    <div class="image_commentaire_grid"><img src="img/photo_1.jpg" alt="" srcset=""></div>
+                    <div class="image_commentaire_grid"><img src="img/photo_2.jpg" alt="" srcset=""></div>
+                </section>
+                <section class="commentaire_grid_center">
+                    <div class="commentaire_grid_center_move"
+                        style="display: flex;flex-direction: column;align-items: center;">
+                        <div class="image_commentaire_grid"><img src="img/photo.jpg" alt="" srcset=""></div>
+                        <p class="commentaire_grid_comment">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vero perferendis error, qui vel culpa quaerat odit sunt perspiciatis ipsum blanditiis
+                            similique ut maxime doloremque, porro laboriosam deleniti rem nisi fuga?</p>
+                        <small class="author_comment_grid">Steve Wilfried</small>
+                    </div>
+                    <div class="commentaire_grid_center_move"
+                        style="display: flex;flex-direction: column;align-items: center;">
+                        <div class="image_commentaire_grid"><img src="img/photo_1.jpg" alt="" srcset=""></div>
+                        <p class="commentaire_grid_comment">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vero perferendis error, qui vel culpa quaerat odit sunt perspiciatis ipsum blanditiis
+                            similique ut maxime doloremque, porro laboriosam deleniti rem nisi fuga? Lorem, ipsum dolor
+                            sit amet consectetur adipisicing elit. Distinctio voluptatem aliquid sunt architecto
+                            reiciendis fugiat totam animi dolor, quod ducimus soluta sequi ipsum nostrum impedit beatae
+                            laboriosam pariatur, corporis minima!
+                            <small class="author_comment_grid">Suzane Wilfried</small>
+                        </p>
+                    </div>
+                    <div class="commentaire_grid_center_move"
+                        style="display: flex;flex-direction: column;align-items: center;">
+                        <div class="image_commentaire_grid"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                        <p class="commentaire_grid_comment">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            rspiciatis ipsum blanditiis
+                            similique ut maxime doloremque, porro laboriosam deleniti rem nisi fuga?</p>
+                        <small class="author_comment_grid">Delfine Wilfried</small>
+                    </div>
+                </section>
+                <section class="commentaire_grid_item">
+                    <div class="image_commentaire_grid"><img src="img/photo_3.jpg" alt="" srcset=""></div>
+                    <div class="image_commentaire_grid"><img src="img/photo_4.jpg" alt="" srcset=""></div>
+                    <div class="image_commentaire_grid"><img src="img/photo_5.jpg" alt="" srcset=""></div>
+                </section>
+            </div>
+        </section>
+        <section class="partenaire">
+            <h3 class="tuto_section_intro">Nos <br> partenaires</h3>
+            <div class="partenaire_move_container">
+                <div class="image_partenaire"><img src="img/client-1.png" alt="" srcset=""></div>
+                <div class="image_partenaire"><img src="img/client-2.png" alt="" srcset=""></div>
+                <div class="image_partenaire"><img src="img/client-3.png" alt="" srcset=""></div>
+                <div class="image_partenaire"><img src="img/client-4.png" alt="" srcset=""></div>
+                <div class="image_partenaire"><img src="img/client-5.png" alt="" srcset=""></div>
+                <div class="image_partenaire"><img src="img/client-6.png" alt="" srcset=""></div>
+                <div class="image_partenaire"><img src="img/client-7.png" alt="" srcset=""></div>
+                <div class="image_partenaire"><img src="img/client-8.png" alt="" srcset=""></div>
+            </div>
+        </section>
+        <footer class="footer" id="footer">
+            <form action="" method="post" class="form_newsletter">
+                <h3 class="newsletter">Inscrivez-vous à notre newsletter et restez informé</h3>
+                <div class="container_input_newsletter">
+                    <input type="email" name="" id="" class="newsletter_input" placeholder="Entrez votre adresse mail">
+                    <button type="submit" class="newsletter_button"><em class="bx bxs-chevron-right"></em></button>
+                </div>
+            </form>
+            <span class="design_by">Design by K2Senpaï</span>
+            <div>
+                <div class="social_link_canadink">
+                    <a href="" class="image_social_link"><img src="img/facebook.png" alt="" srcset=""></a>
+                    <a href="" class="image_social_link"><img src="img/twitter.png" alt="" srcset=""></a>
+                    <a href="" class="image_social_link"><img src="img/instagram.png" alt="" srcset=""></a>
+                    <a href="" class="image_social_link"><img src="img/google.png" alt="" srcset=""></a>
+                </div>
+                <div class="droit_reserve"><em class="bx bx-copyright"></em> Canadink Tous droits reservés</div>
+            </div>
+            <!-- <div>Canada, Ottawa <em class="bx bx-map"></em></div> -->
+            </div>
+        </footer>
     </section>
     <!-- <div class="canad_circle">
         <div class="text_circular">
@@ -705,36 +804,16 @@
         </div>
         <em class="bx bx-down-arrow-alt canad_fleche"></em>
     </div> -->
-    <footer class="footer" id="footer">
-        <form action="" method="post" class="form_newsletter">
-            <h3 class="newsletter">Inscrivez - vous à notre Newsletter pour ne rien râter des actualités sur
-                l'immigration au canada</h3>
-            <input type="email" name="" id="" class="newsletter_input" placeholder="Votre adresse mail">
-            <button type="submit" class="newsletter_button">S'inscrire</button>
-        </form>
-        <div class="social_footer">
-            <div class="copyright">
-                <em class="bx bx-copyright"></em>
-                <span> Canadink Tous droits reservés
-                    <div class="social_footer_link">
-                        <a href="" class="bx bxl-facebook"></a>
-                        <a href="" class="bx bxl-twitter"></a>
-                        <a href="" class="bx bxl-whatsapp"></a>
-                        | <em class="bx bx-map"></em>Canada, Ottawa
-                </span>
-            </div>
-        </div>
-        <span class="design_by">Design by K2Senpaï</span>
-        </div>
-    </footer>
+
     <div class="menu_container">
         <div class="menu_image_container">
             <div class="menu_image menu_image_visible"><img src="img/photo_2.jpg" alt="" srcset=""></div>
             <div class="menu_image connexion_menu"><img src="img/photo_3.jpg" alt="" srcset=""></div>
             <div class="menu_image tutoriel_menu"><img src="img/photo_4.jpg" alt="" srcset=""></div>
             <div class="menu_image faq_menu"><img src="img/photo_5.jpg" alt="" srcset=""></div>
-            <div class="menu_image propos_menu"><img src="img/photo_6.jpg" alt="" srcset=""></div>
-            <div class="menu_image contact_menu"><img src="img/photo_7.jpg" alt="" srcset=""></div>
+            <div class="menu_image partenaire_menu"><img src="img/photo_6.jpg" alt="" srcset=""></div>
+            <div class="menu_image commentaire_menu"><img src="img/photo_7.jpg" alt="" srcset=""></div>
+            <div class="menu_image propos_menu"><img src="img/photo_3.jpg" alt="" srcset=""></div>
         </div>
         <div class="menu_text">
             <ul>
@@ -742,8 +821,9 @@
                 </li>
                 <li class="tutoriel_menu"><a href=""><span class="before_link">02</span> Nos tutoriels</a></li>
                 <li class="faq_menu"><a href=""><span class="before_link">03</span> Faq</a></li>
-                <li class="propos_menu"><a href=""><span class="before_link">04</span> A propos de nous</a></li>
-                <li class="contact_menu"><a href=""><span class="before_link">05</span> Contactez-nous</a></li>
+                <li class="commentaire_menu"><a href=""><span class="before_link">04</span> Commentaires</a></li>
+                <li class="partenaire_menu"><a href=""><span class="before_link">05</span>Partenaires</a></li>
+                <li class="propos_menu"><a href=""><span class="before_link">06</span> A propos de nous</a></li>
             </ul>
             <!-- <form action="" method="post" class="form_search">
                 <input type="search" name="" id="" class="search_general">
@@ -759,8 +839,7 @@
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
-    <script src="js/three.min.js"></script>
-    <script src="js/vanta.birds.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         // const circleTypeService = new CircleType(document.querySelector(".text_circular")).radius(100)
         const my_text = new SplitType("#my_text")
@@ -773,9 +852,9 @@
         const tl = gsap.timeline()
         const tl_2 = gsap.timeline()
         tl.to(".circle_big_primary", {
-                scale: 100,
-                duration: 1
-            }).from(".char", {
+            scale: 100,
+            duration: 1
+        }).from(".char", {
             y: 100,
             opacity: 0,
             delay: 0.5,
@@ -786,18 +865,18 @@
             },
             ease: "back.out(2)"
         }).from(".page_preload em", {
-                y: -50,
-                scale: 0,
-                duration: 1,
-                stagger: 0.1,
-                ease: "back.out(2)"
-            }).from(".circle_big_bg", {
-                visibility: "hidden",
-                delay: 0.5
-                // }).to(".bar_chargement", {
-                //     visibility: "hidden",
-                //     delay: 2
-            })
+            y: -50,
+            scale: 0,
+            duration: 1,
+            // stagger: 0.1,
+            ease: "back.out(2)"
+        }).from(".circle_big_bg", {
+            visibility: "hidden",
+            delay: 0.5
+            // }).to(".bar_chargement", {
+            //     visibility: "hidden",
+            //     delay: 2
+        })
             .to(tab, {
                 delay: 0.5,
                 y: 100,
@@ -885,12 +964,36 @@
             duration: 0.7,
             stagger: 0.4
         })
+        gsap.from(".commentaire h3", {
+            scrollTrigger: {
+                trigger: ".commentaire h3"
+            },
+            scale: 1.3,
+            opacity: 0,
+            duration: 0.7,
+        })
+        gsap.from(".commentaire_grid_container", {
+            scrollTrigger: {
+                trigger: ".commentaire_grid_container"
+            },
+            scale: 1.3,
+            opacity: 0,
+            duration: 0.7,
+        })
+        gsap.from(".partenaire", {
+            scrollTrigger: {
+                trigger: ".partenaire"
+            },
+            scale: 1.3,
+            opacity: 0,
+            duration: 0.7,
+        })
         gsap.from(".footer", {
             scrollTrigger: {
                 trigger: ".footer"
             },
             yPercent: 100,
-            duration: 1.5
+            duration: 1
         })
         gsap.to(".most_look", {
             scrollTrigger: {
@@ -899,24 +1002,82 @@
             opacity: 1,
             duration: 2
         })
-        VANTA.BIRDS({
-            el: "#footer",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            backgroundColor: 0xffffff,
-            color1: 0xed1313,
-            birdSize: 1.80,
-            wingSpan: 26.00,
-            separation: 100.00,
-            alignment: 100.00,
-            cohesion: 10.00
+        // VANTA.BIRDS({
+        //     el: "#footer",
+        //     mouseControls: true,
+        //     touchControls: true,
+        //     gyroControls: false,
+        //     minHeight: 200.00,
+        //     minWidth: 200.00,
+        //     scale: 1.00,
+        //     scaleMobile: 1.00,
+        //     backgroundColor: 0xffffff,
+        //     color1: 0xed1313,
+        //     birdSize: 1.80,
+        //     wingSpan: 26.00,
+        //     separation: 100.00,
+        //     alignment: 100.00,
+        //     cohesion: 10.00
+        // })
+        const element_menu_float = document.querySelectorAll(".element_menu_float")
+        const button_plus_look = document.querySelector(".button_plus_look")
+        const button_minus_look = document.querySelector(".button_minus_look")
+        button_plus_look.addEventListener("click", () => {
+            button_plus_look.classList.add("hide_button")
+            button_minus_look.classList.remove("hide_button")
+            for (let i = 0; i < element_menu_float.length; i++) {
+                element_menu_float[i].classList.add("show_navigation")
+            }
         })
-
+        button_minus_look.addEventListener("click", () => {
+            button_minus_look.classList.add("hide_button")
+            button_plus_look.classList.remove("hide_button")
+            for (let i = 0; i < element_menu_float.length; i++) {
+                element_menu_float[i].classList.remove("show_navigation")
+            }
+        })
+        $('.commentaire_grid_center').slick({
+            dots: true,
+            infinite: true,
+            fade: true,
+            speed: 500,
+            autoplay: true,
+            cssEase: 'linear'
+        });
+        $('.partenaire_move_container').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
     </script>
 </body>
 
