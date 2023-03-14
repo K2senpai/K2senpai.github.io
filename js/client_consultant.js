@@ -39,6 +39,10 @@ button_grid.forEach(function (element) {
                 const grid_item_list_element = grid_item_list.filter(grid_item => grid_item.classList.contains("information_compte_grid"))
                 grid_item_list_element[0].classList.add("active_grid_item")
             }
+            else if (element.classList.contains("button_feuille_de_route_list")) {
+                const grid_item_list_element = grid_item_list.filter(grid_item => grid_item.classList.contains("feuille_de_route_grid"))
+                grid_item_list_element[0].classList.add("active_grid_item")
+            }
         }
     })
 })

@@ -33,17 +33,26 @@ menu_item.forEach(function (element) {
           menu_image[i].classList.remove("menu_image_visible");
         }
       }
-    } else if (element.classList.contains("propos_menu")) {
+    } else if (element.classList.contains("partenaire_menu")) {
       for (let i = 0; i < menu_image.length; i++) {
-        if (menu_image[i].classList.contains("propos_menu")) {
+        if (menu_image[i].classList.contains("partenaire_menu")) {
           menu_image[i].classList.add("menu_image_visible");
         } else {
           menu_image[i].classList.remove("menu_image_visible");
         }
       }
-    } else if (element.classList.contains("contact_menu")) {
+    } else if (element.classList.contains("commentaire_menu")) {
       for (let i = 0; i < menu_image.length; i++) {
-        if (menu_image[i].classList.contains("contact_menu")) {
+        if (menu_image[i].classList.contains("commentaire_menu")) {
+          menu_image[i].classList.add("menu_image_visible");
+        } else {
+          menu_image[i].classList.remove("menu_image_visible");
+        }
+      }
+    }
+    else if (element.classList.contains("propos_menu")) {
+      for (let i = 0; i < menu_image.length; i++) {
+        if (menu_image[i].classList.contains("propos_menu")) {
           menu_image[i].classList.add("menu_image_visible");
         } else {
           menu_image[i].classList.remove("menu_image_visible");
