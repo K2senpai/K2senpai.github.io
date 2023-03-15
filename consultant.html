@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/gsap.min.js"></script>
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="css/boxicons.min.css">
+    <script src="gsap/minified/gsap.min.js"></script>
+    <link rel="stylesheet" href="slick/slick/slick.css">
+    <link rel="stylesheet" href="slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Profil - Consultant</title>
 </head>
@@ -194,6 +194,7 @@
                 <em class="bx bx-search"></em>
             </form>
             <div class="favoris_filter">
+                <button type="button" class="button_feuille_de_route_list"><em class="bx bxs-file"></em> Feuilles de route</button>
                 <button type="button" class="button_tutoriel_list"><em class="bx bxs-video"></em> Tutoriels crées <em
                         title="Cliquez pour créer une video" class="create_tuto bx bx-plus"></em></button>
                 <button type="button" class="button_favoris_list active_button_favoris"><em
@@ -359,6 +360,83 @@
                     <div class="video_favoris"><img src="img/photo_5.jpg" alt="" srcset=""></div>
                     <a href="" class="link_video_favoris"><em class="bx bx-play"></em></a>
                 </div>
+            </div>
+            <div class="feuille_de_route_grid grid_item_list feuille_route_contain">
+                <form action="" method="post" class="form_feuille_route">
+                    <ul class="list_modal_feuille_route">
+                        <div class="title_feuille_route">Obtenir un passeport</div>
+                        <li>
+                            <input type="checkbox" id="canada_school">
+                            <label for="canada_school">Obtenir un passeport</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_work">
+                            <label for="canada_work">Obtenir un passeport</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_immigration">
+                            <label for="canada_immigration">Obtenir un passeport</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_visite">
+                            <label for="canada_visite">Obtenir un passeport</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_investi">
+                            <label for="canada_investi">Obtenir un passeport</label>
+                        </li>
+                    </ul>
+                </form>
+                <form action="" method="post" class="form_feuille_route">
+                    <ul class="list_modal_feuille_route">
+                        <div class="title_feuille_route">Etudier au Canada</div>
+                        <li>
+                            <input type="checkbox" id="canada_school">
+                            <label for="canada_school">Etudier au Canada</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_work">
+                            <label for="canada_work">Travailler au Canada</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_immigration">
+                            <label for="canada_immigration">Immigrer au Canada</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_visite">
+                            <label for="canada_visite">Visiter le Canada</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_investi">
+                            <label for="canada_investi">Investir au Canada</label>
+                        </li>
+                    </ul>
+                </form>
+                <form action="" method="post" class="form_feuille_route">
+                    <ul class="list_modal_feuille_route">
+                        <div class="title_feuille_route">Travailler au Canada</div>
+                        <li>
+                            <input type="checkbox" id="canada_school">
+                            <label for="canada_school">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut facilis quas aliquam, tempore quibusdam veniam vel nesciunt odio voluptatem, expedita repudianrit unde adipisci veritatis quae.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_work">
+                            <label for="canada_work">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo reprehenderit dolorem ullam eum architecto, earum minus beatae pariatur, vero quis voluptates fugit, ea quod consectetur facere rem repudiandae perferendis.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_immigration">
+                            <label for="canada_immigration">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolor facere tempora in qui? Doloremque exercitationem ipsum architecto provident perspiciatis fugiat quod et unde impedit qui, quasi beatae!</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_visite">
+                            <label for="canada_visite">Lorem ipsum dolor sit reprehenderit libero corporis doloremque rerum, minus mollitia est cum suscipit iure esse possimus, doloribus impedit adipisci dolorum ullam. Cumque, voluptates esse?</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="canada_investi">
+                            <label for="canada_investi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perspiciatis ipsum, quasi quaerat mollitia hic commodi, omnis consectetur, illum iciatis tempore quos sint sequi!</label>
+                        </li>
+                    </ul>
+                </form>
             </div>
             <div class="abonnement_grid responsive_element_grid">
                 <section class="abonnement">
@@ -625,7 +703,7 @@
     </div>
     <div id="cursor"></div>
     <script src="js/jquery.js"></script>
-    <script src="slick/slick.min.js"></script>
+    <script src="slick/slick/slick.min.js"></script>
     <script src="js/splitmin.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
