@@ -383,12 +383,7 @@ transform: translateX(-100%);
 {
     width: 100%;
 }
-.grid_item_list.feuille_route_contain
-{
-    display: block !important;
-    width: 100%;
-    gap: 0;
-}
+
 .form_feuille_route
 {
     width: 100%;
@@ -2510,7 +2505,12 @@ hr {
     grid-auto-rows: 250px;
     display: none;
 }
-
+.grid_item_list.feuille_route_contain
+{
+    display: block;
+    width: 100%;
+    gap: 0;
+}
 .responsive_element_grid {
     display: none;
 }
