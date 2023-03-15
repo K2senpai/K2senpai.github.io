@@ -2720,7 +2720,7 @@ hr {
     margin-bottom: 50px;
     align-items: center;
     justify-items: center;
-    place-content: center;
+    /* place-content: center; */
     /* background: rebeccapurple; */
     padding: 0;
 }
