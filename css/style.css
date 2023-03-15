@@ -2494,7 +2494,12 @@ hr {
     outline: solid #0E6C78 1px;
     background: transparent;
 }
-
+.feuille_route_contain
+{
+    display: none;
+    width: 100%;
+    gap: 0;
+}
 .grid_item_list,
 .favoris_grid_client {
     display: grid;
@@ -2504,12 +2509,6 @@ hr {
     grid-auto-flow: row dense;
     grid-auto-rows: 250px;
     display: none;
-}
-.grid_item_list.feuille_route_contain
-{
-    display: block;
-    width: 100%;
-    gap: 0;
 }
 .responsive_element_grid {
     display: none;
@@ -2530,7 +2529,9 @@ hr {
 .grid_item_list.active_grid_item {
     display: grid;
 }
-
+.feuille_route_contain.grid_item_list.active_grid_item {
+    display: block;
+}
 .video_favoris_container {
     position: relative !important;
     z-index: 5;
